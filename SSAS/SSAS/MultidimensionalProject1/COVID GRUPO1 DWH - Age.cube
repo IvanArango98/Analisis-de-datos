@@ -1,0 +1,2647 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8c7531fd-03fc-4209-a29b-f8e6e2563245" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>COVID GRUPO1 DWH - Age</ID>
+  <Name>COVID GRUPO1 DWH - Age</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5372" scrolltop="-577" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="28840" y="21405" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Demographics" left="2755" top="14800" logicalid="12" controlid="1" masterid="0" hint1="0" hint2="0" width="5027" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000a313000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Demographics" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fecha" left="10182" top="14800" logicalid="13" controlid="2" masterid="0" hint1="0" hint2="0" width="4604" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fc11000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Fecha" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Health" left="5979" top="0" logicalid="14" controlid="3" masterid="0" hint1="0" hint2="0" width="5583" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000cf15000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Health" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Economy" left="13763" top="7400" logicalid="15" controlid="4" masterid="0" hint1="0" hint2="0" width="3863" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000170f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Economy" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Geography" left="20" top="7400" logicalid="16" controlid="5" masterid="0" hint1="0" hint2="0" width="3757" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ad0e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Geography" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Age" left="6177" top="7400" logicalid="17" controlid="6" masterid="0" hint1="0" hint2="0" width="5186" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004214000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Fact_Age" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4869" top="12100" logicalid="18" controlid="7" masterid="0" hint1="0" hint2="0" width="3101" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Age__SK_Demograp__719CDDE7]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="6" sourceattachpoint="8" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5268" y="14800" />
+              <point x="5268" y="13600" />
+              <point x="7670" y="13600" />
+              <point x="7670" y="12400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9020" top="12100" logicalid="19" controlid="8" masterid="0" hint1="0" hint2="0" width="3864" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Age__DateKey__756D6ECB]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="6" sourceattachpoint="8" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12484" y="14800" />
+              <point x="12484" y="13600" />
+              <point x="9320" y="13600" />
+              <point x="9320" y="12400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8371" top="4501" logicalid="20" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Age__SK_Health__74794A92]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="6" sourceattachpoint="9" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8770" y="5000" />
+              <point x="8770" y="7400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="11063" top="9501" logicalid="21" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Age__SK_Economy__72910220]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="6" sourceattachpoint="22" destattachpoint="27" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13763" y="9900" />
+              <point x="11363" y="9900" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3477" top="9501" logicalid="22" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Age__SK_Geograph__73852659]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="6" sourceattachpoint="23" destattachpoint="26" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3777" y="9900" />
+              <point x="6177" y="9900" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5372</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-577</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="8ff74231-9313-406a-bfb3-d84700b1a310">
+      <ID>Economy</ID>
+      <Name>Economy</Name>
+      <DimensionID>Economy</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="22df1665-df55-474d-9120-43d1f72d691d">
+          <AttributeID>SK Economy</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5e314329-cfd2-4ad6-8cd0-f9f8d90bde38">
+          <AttributeID>Gdp</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="49635807-84f7-4c7f-b9ba-df80945ffd95">
+          <AttributeID>Gdp Per Capita</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="62635942-c285-41a9-b633-b9202ca4112d">
+          <AttributeID>Human Capital Index</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="68e299e0-e098-4806-8039-c219e370d0f7">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="91a05757-4c56-420d-a939-d1bc12d7c06b">
+      <ID>Health</ID>
+      <Name>Health</Name>
+      <DimensionID>Health</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d3d38d20-f243-4470-83ae-01ef4365cece">
+          <AttributeID>SK Health</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7d174ce8-f29d-4a3d-a744-73de3261873e">
+          <AttributeID>Life Expectancy</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="75ab6ee0-d072-4578-b5ec-f4ddce84e716">
+          <AttributeID>Smoking Prevalence</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="78d4f4f8-775f-4fa4-a386-82dc87a22ccc">
+          <AttributeID>Diabetes Prevalence</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bf2097b9-7ff1-4a90-b511-59c6dba541d6">
+          <AttributeID>Infant Mortality Rate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fb5ded25-b8aa-4d7c-859a-cd74f0b74382">
+          <AttributeID>Adult Male Mortality Rate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a059dd53-2439-4097-8a84-731269e66b3b">
+          <AttributeID>Adult Female Mortality Rate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="759c0e74-3c64-4d79-8b1f-fd5c194228d8">
+          <AttributeID>Pollution Mortality Rate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a5cab900-7ca9-45aa-a7a4-2858497f6d4b">
+          <AttributeID>Comorbidity Mortality Rate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c3443a70-823f-47ac-af4a-cc8f949cafe1">
+          <AttributeID>Hospital Beds</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="23c0202d-f40e-4778-8202-095acd7edc09">
+          <AttributeID>Nurses</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7053b875-7146-4a0a-be2f-618866bec6c9">
+          <AttributeID>Physicians</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57ac80e7-1661-4158-baf1-2a93346ade33">
+          <AttributeID>Health Expenditure</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6f3b38a1-4348-41b8-a234-dbe70409846c">
+          <AttributeID>Out Of Pocket Health Expenditure</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6ea94a08-c502-43c6-acba-1546215d5f5b">
+      <ID>Demographics</ID>
+      <Name>Demographics</Name>
+      <DimensionID>Demographics</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6f1986d2-babe-4668-989a-05463212a605">
+          <AttributeID>SK Demographics</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d3aa0da3-6024-462f-a5de-b172b321129e">
+          <AttributeID>Population</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c6ae0112-56b0-47d8-a617-1f2eaa30ff91">
+          <AttributeID>Population Male</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e1c3fab3-7cd8-41ee-be39-6b215468ebaf">
+          <AttributeID>Population Female</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="900cd0ed-661b-4766-bd2f-1ef68b3af104">
+          <AttributeID>Rural Population</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="02ca3d73-50bc-402d-a4dd-80734d28d692">
+          <AttributeID>Urban Population</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="828ceb88-6d6e-4867-82ad-511b4aaa22c6">
+          <AttributeID>Largest City Population</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7f243484-ee68-455e-a441-5af7744144ab">
+          <AttributeID>Clustered Population</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aba130b8-4356-43ab-84fa-24be5e2173e7">
+          <AttributeID>Population Density</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7685da84-6528-4da8-82bd-5656c5f0781f">
+          <AttributeID>Human Development Index</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dfd66791-f92f-4320-936d-d180b1ee28e7">
+          <AttributeID>Population Age 00 09</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0cfe170b-9c71-40ac-ba65-181998abc0aa">
+          <AttributeID>Population Age 10 19</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5bf70aa2-398f-49b0-abc0-137007d34281">
+          <AttributeID>Population Age 20 29</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="96eabec4-b611-47d7-855c-50464959a560">
+          <AttributeID>Population Age 30 39</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="361f62c6-d8f0-4e20-b216-5424bcea5afd">
+          <AttributeID>Population Age 40 49</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8d145ba7-0f58-44f8-8984-fa3f63302ff7">
+          <AttributeID>Population Age 50 59</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3d0a962e-bc40-4e98-a2ad-69d77c1a6835">
+          <AttributeID>Population Age 60 69</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="803c2064-0de6-4f9b-95fa-316d85056ec1">
+          <AttributeID>Population Age 70 79</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="89194628-f9bb-4632-92db-847b8f384b2e">
+          <AttributeID>Population Age 80 89</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="87c7e79c-9337-44a6-b3ac-b9244e7fe373">
+          <AttributeID>Population Age 90 99</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="daaf9cf7-598e-4963-af00-b435e9de18f1">
+          <AttributeID>Population Age 80 And Older</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8ccfb5b5-bae8-433d-bc7d-b84ec79db002">
+      <ID>Fecha</ID>
+      <Name>Fecha</Name>
+      <DimensionID>Fecha</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="003a40e6-adf0-441f-b47f-df89a7196573">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6a523c2f-7de7-40a7-ade2-526aa66852f9">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="de36bf49-493c-4613-a1ed-6fc486e967c4">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bc9da908-ea68-4fbd-9dfc-5e263d8be9c6">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7d6c7ac0-948d-4368-abbe-f514ea9ccf3b">
+          <AttributeID>Quarter Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4108a973-b004-485c-a5a0-3d06f07e8f5e">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="5ebd259f-ab1e-4dd8-afa8-a220bab184bb">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="78885d11-0a05-436d-8b63-8a234d7a71b0">
+      <ID>Geography</ID>
+      <Name>Geography</Name>
+      <DimensionID>Geography</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="841d052f-c755-4843-8e57-0fc7a38306b4">
+          <AttributeID>SK Geography</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b9bc2ba5-1893-4381-93c2-d931e44ad985">
+          <AttributeID>Latitude</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6fe4c1b1-a035-4c57-bbd6-2ce1dfee81b0">
+          <AttributeID>Longitude</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57779db8-8f34-482a-a2b6-0778985093b5">
+          <AttributeID>Elevation</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8bd15643-72a1-48ab-abda-d1e43794e7b8">
+          <AttributeID>Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="402abade-9cdc-4693-be36-13a62d98a9eb">
+          <AttributeID>Rural Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="363004de-21d4-49c8-b74f-b33b85c1c2b4">
+          <AttributeID>Urban Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f47a2e3d-d309-4cb1-a73d-45b148624fee">
+          <AttributeID>Open Street Maps</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="125362dd-7e3f-4d57-80c0-6698c341c0af">
+          <AttributeID>Country Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1ffbeb80-512e-4cd1-a661-9e158307873d">
+          <AttributeID>Country Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3b62a8cf-2e27-42e8-b0d1-4048db067f66">
+          <AttributeID>Subregion1 Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="375e4464-4dd8-439b-bcf3-348cae9983b1">
+          <AttributeID>Subregion1 Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d761190-0e9f-4cae-9c8c-badc19cc4f50">
+          <AttributeID>Subregion2 Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="62113db3-f057-4b96-95c4-d4023be5d59c">
+          <AttributeID>Subregion2 Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="2e9ea0d9-1435-4440-b4da-2a44c44d83ae">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="bea18dd0-4641-47e0-93bf-13284ac92d12">
+      <ID>Age</ID>
+      <Name>Age</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="4d0e4853-e69d-42e7-b742-44d658312488">
+          <ID>New Confirmed Age 00</ID>
+          <Name>New Confirmed Age 00</Name>
+          <Source dwd:design-time-name="a997571b-99a5-4524-bfc9-2276b02cb1e9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="18c42391-c529-4cd9-bec2-c075e3b6098e">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_confirmed_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f4ac51a7-9ad0-4ee8-aff1-9147dfe6e4b3">
+          <ID>New Confirmed Age 01</ID>
+          <Name>New Confirmed Age 01</Name>
+          <Source dwd:design-time-name="5514ed90-6e5e-4824-aca7-c892157046a4">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="75990c49-3ff1-4aa8-9ead-7a4e1394346f">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_confirmed_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f17b3d14-4676-42d2-904f-aa8f6fba5914">
+          <ID>New Confirmed Age 02</ID>
+          <Name>New Confirmed Age 02</Name>
+          <Source dwd:design-time-name="7711ab1f-80b0-4853-b709-1e3e9b9f5b57">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a2a76081-814c-40bd-b03a-b51433a6a1e9">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_confirmed_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e2c95a79-12dd-4164-8763-adfb5801f8aa">
+          <ID>New Confirmed Age 03</ID>
+          <Name>New Confirmed Age 03</Name>
+          <Source dwd:design-time-name="28d7fb98-bc20-47f8-b96a-1a6fb382407f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1e80eb05-d736-4a18-aeed-5fdf9653b54e">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_confirmed_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d94de663-13c3-4f50-bd82-c92d7f4f285f">
+          <ID>New Confirmed Age 04</ID>
+          <Name>New Confirmed Age 04</Name>
+          <Source dwd:design-time-name="0fe75129-5a0e-459d-bbc4-2a673be2fc6e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b6bd43c8-0ec5-4622-b119-f27bb342fbff">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_confirmed_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4836da7c-afc5-4613-a9aa-7fadf6bb9f6e">
+          <ID>New Confirmed Age 05</ID>
+          <Name>New Confirmed Age 05</Name>
+          <Source dwd:design-time-name="7f27d8c3-84b2-43bb-be48-5002a397c656">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bbd75cdd-b8f7-4324-8aa6-4fd96f5e57ee">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_confirmed_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7bfb2e5d-1d37-4d9d-9ae6-471ebe22a308">
+          <ID>New Confirmed Age 06</ID>
+          <Name>New Confirmed Age 06</Name>
+          <Source dwd:design-time-name="cfb7cea7-c229-47f6-8f03-cfc0e595279b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e0b3483c-e673-45a5-96bf-04117c6e0438">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_confirmed_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3ea0e48c-ef3b-41f6-9960-b82157576ebd">
+          <ID>New Confirmed Age 07</ID>
+          <Name>New Confirmed Age 07</Name>
+          <Source dwd:design-time-name="bc91e359-c6e7-45c1-b518-71b5f5e79f0b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="81ea3c65-902f-4362-b6e1-82b6bf3c5595">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_confirmed_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6979543a-072e-43d3-9cf3-c385ebb51ceb">
+          <ID>New Confirmed Age 08</ID>
+          <Name>New Confirmed Age 08</Name>
+          <Source dwd:design-time-name="b93ee965-c289-4717-9a91-6024486e7d04">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0c060894-9eb1-4fd0-a275-97aec318846f">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_confirmed_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a1db6666-7c4c-4edc-94b4-b9e777ac88bd">
+          <ID>New Confirmed Age 09</ID>
+          <Name>New Confirmed Age 09</Name>
+          <Source dwd:design-time-name="aea5205b-c158-44cd-983f-cf3c96ae8927">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ea0e8df8-483b-49ce-8332-b266d8403927">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_confirmed_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="be6cc2e5-e8bc-4ed6-b126-b51b2760c813">
+          <ID>Total Confirmed Age 00</ID>
+          <Name>Total Confirmed Age 00</Name>
+          <Source dwd:design-time-name="336d2ca3-874f-4077-a2bb-24e1e44c7236">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e258d900-90c6-411a-bfae-3cf875535198">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_confirmed_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0d137766-3908-4407-a652-befd71889a3d">
+          <ID>Total Confirmed Age 01</ID>
+          <Name>Total Confirmed Age 01</Name>
+          <Source dwd:design-time-name="4c3a7478-62d6-4faa-bacd-c80d531df2d4">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1fcddbff-b2f3-4e84-ad77-585350f3d968">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_confirmed_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="48415d5a-7c45-4dee-8776-5b2f4270c75c">
+          <ID>Total Confirmed Age 02</ID>
+          <Name>Total Confirmed Age 02</Name>
+          <Source dwd:design-time-name="1eaedcf9-9eb9-4a60-b9d5-b41d61a5da79">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ebd86639-7c8b-4df2-a3c9-6739d869280b">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_confirmed_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="619a15ab-a765-4590-8ea5-4fbc1127475e">
+          <ID>Total Confirmed Age 03</ID>
+          <Name>Total Confirmed Age 03</Name>
+          <Source dwd:design-time-name="de7b4dca-dd54-4bd4-92b7-51aa90866a46">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1c244e4b-dbe5-4663-891b-b579075837a1">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_confirmed_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e71ba2c9-b905-4b7c-8706-5b9110901999">
+          <ID>Total Confirmed Age 04</ID>
+          <Name>Total Confirmed Age 04</Name>
+          <Source dwd:design-time-name="8cea6b4d-4642-4339-aa99-66414ffe73d7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4b9432a8-5bcc-4b3a-8f9c-7d84ad3dfde8">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_confirmed_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e7c3f1e9-3423-472e-b519-2a809a42bd57">
+          <ID>Total Confirmed Age 05</ID>
+          <Name>Total Confirmed Age 05</Name>
+          <Source dwd:design-time-name="02bf7aaf-a9e8-4583-bd3f-491fbdfedfa5">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f982a6fb-7097-4fc3-bf97-154b866732a6">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_confirmed_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fe582a37-ca25-45da-938a-6a479d892491">
+          <ID>Total Confirmed Age 06</ID>
+          <Name>Total Confirmed Age 06</Name>
+          <Source dwd:design-time-name="1805e80d-b795-41e5-9cc0-fb6839a709e3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="79dadd5b-dfae-46ec-ae2f-700e703b9d88">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_confirmed_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="69330447-f0b6-46bc-921e-bacddc0b0668">
+          <ID>Total Confirmed Age 07</ID>
+          <Name>Total Confirmed Age 07</Name>
+          <Source dwd:design-time-name="53b375a9-9e53-444f-aab5-92523fa65a08">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="29f0ba6a-4821-4b91-a182-b90c767c524f">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_confirmed_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="62e35fd9-0099-4e4d-aaff-be66da68f18e">
+          <ID>Total Confirmed Age 08</ID>
+          <Name>Total Confirmed Age 08</Name>
+          <Source dwd:design-time-name="bf722367-c9c4-41dc-98ea-5025104941b5">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8c3c64d6-9e6c-4cf2-a6ac-e901aa6728cf">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_confirmed_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ea80929e-ed62-4803-983c-70ca8aac86e4">
+          <ID>Total Confirmed Age 09</ID>
+          <Name>Total Confirmed Age 09</Name>
+          <Source dwd:design-time-name="c44a492d-3107-4c38-a079-55427682332d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="50beeab9-2aa8-42e7-b212-bc896e00fe5b">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_confirmed_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c75b0cf5-b004-41f1-9119-073eaefa9289">
+          <ID>New Deceased Age 00</ID>
+          <Name>New Deceased Age 00</Name>
+          <Source dwd:design-time-name="0fbf9739-fe31-4673-9a0a-8908b2960684">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="80b46b83-c232-49ca-8e0f-c108c1f6543d">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_deceased_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f9cac8a2-b4b4-48ae-8d90-6fac92f5aede">
+          <ID>New Deceased Age 01</ID>
+          <Name>New Deceased Age 01</Name>
+          <Source dwd:design-time-name="853e35b0-1b7c-473f-85bc-64f9984348d8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8d9db019-79e2-4a7b-9dfd-ca750895a5f0">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_deceased_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="79595237-0d86-4d3a-81cd-6330839126ba">
+          <ID>New Deceased Age 02</ID>
+          <Name>New Deceased Age 02</Name>
+          <Source dwd:design-time-name="3f9470ef-648e-4bda-b920-08b2d525d984">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ec0f787a-4665-4624-865e-29c1a1284f4e">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_deceased_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="08bbc0d5-97c9-4ca8-a539-0fd1968ff548">
+          <ID>New Deceased Age 03</ID>
+          <Name>New Deceased Age 03</Name>
+          <Source dwd:design-time-name="a4811c82-0224-485e-bf25-c33d2c818991">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bcad7550-7dec-4eb7-abf7-277f0b0901b3">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_deceased_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a99f4517-dd67-43ba-ad6a-804238898923">
+          <ID>New Deceased Age 04</ID>
+          <Name>New Deceased Age 04</Name>
+          <Source dwd:design-time-name="8c09c528-9f2f-4129-abd8-f46d4ec8e2fd">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="48162341-ac6f-4755-bec7-7763bfc7b0ea">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_deceased_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5207c961-ed99-4c55-bf23-4ae503d7382c">
+          <ID>New Deceased Age 05</ID>
+          <Name>New Deceased Age 05</Name>
+          <Source dwd:design-time-name="26406c1d-5861-4fa9-ab16-fd84d3cafd2a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b3c250a9-7453-4856-8b66-2515be9071be">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_deceased_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bd228333-3566-4a9e-9e0e-64b611ea7512">
+          <ID>New Deceased Age 06</ID>
+          <Name>New Deceased Age 06</Name>
+          <Source dwd:design-time-name="d724a282-e16a-45c1-87fd-534fc022989e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="af6119a6-ac02-43cf-9f64-ec90e4efc90b">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_deceased_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6af81c02-e1be-4c4c-a4be-6c24c7d58689">
+          <ID>New Deceased Age 07</ID>
+          <Name>New Deceased Age 07</Name>
+          <Source dwd:design-time-name="b656c2e6-0f8e-4aa8-a15c-707826bb80c7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ae20969a-f5a1-47ad-858d-f77881682984">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_deceased_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3f6ad2e0-823b-49c3-8a53-d76372f0bcf8">
+          <ID>New Deceased Age 08</ID>
+          <Name>New Deceased Age 08</Name>
+          <Source dwd:design-time-name="a643e017-e40e-4b78-ad37-1d09dc76c56e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="65229050-edbc-4a66-aa5f-27c5fe8c4d35">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_deceased_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3f544c1a-89c0-4425-bc11-119bc14c7e72">
+          <ID>New Deceased Age 09</ID>
+          <Name>New Deceased Age 09</Name>
+          <Source dwd:design-time-name="a8cda784-fc9b-4d7e-8dff-faf20fc682bf">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5c1cf84d-7b85-4968-9778-9d3e1710f141">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_deceased_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="caef033e-f17b-4df1-917c-327fc0195d6d">
+          <ID>Total Deceased Age 00</ID>
+          <Name>Total Deceased Age 00</Name>
+          <Source dwd:design-time-name="4f7ded6a-73be-4b05-937c-b2da8d0f3dc6">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c2a0a561-c39c-4602-8049-20fcd060f4de">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_deceased_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d3f405ad-28e6-4fe4-be9a-4d94b94f7ffb">
+          <ID>Total Deceased Age 01</ID>
+          <Name>Total Deceased Age 01</Name>
+          <Source dwd:design-time-name="f2db29e9-f733-463b-bc01-8cdb86b8f2e7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6b04747c-8599-4b0c-933d-9c2c889ce7ba">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_deceased_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c31c5a00-0f98-4b0d-927c-149d4112b6fa">
+          <ID>Total Deceased Age 02</ID>
+          <Name>Total Deceased Age 02</Name>
+          <Source dwd:design-time-name="57fa6bb1-ab70-4c04-a96b-ded904b1a034">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="631104fa-fac4-492c-8a56-83525ac49ec1">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_deceased_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d623f3e0-03d4-4558-ab6d-f20b4d6b99f0">
+          <ID>Total Deceased Age 03</ID>
+          <Name>Total Deceased Age 03</Name>
+          <Source dwd:design-time-name="b9284059-2c28-4abf-9ccf-cca24aa32471">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a6c3121b-26b8-4d27-ba98-0ed8b3f8679c">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_deceased_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3d2bfbb5-bab7-4d5c-810c-c0cca4e59e4d">
+          <ID>Total Deceased Age 04</ID>
+          <Name>Total Deceased Age 04</Name>
+          <Source dwd:design-time-name="a81b9d89-cb22-42fc-93d8-47b0a6b1ddfc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ceea90c5-2bd2-4cc6-9fed-7ff7028ba440">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_deceased_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="321f1e05-39bf-416d-b16a-e29382d7391e">
+          <ID>Total Deceased Age 05</ID>
+          <Name>Total Deceased Age 05</Name>
+          <Source dwd:design-time-name="9fc3699c-a86f-4cf1-8998-00522f31d2cc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ee3a07f9-4148-4039-9959-f6deeb20d467">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_deceased_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="517c3592-2cfe-4c42-8ca4-19781b769497">
+          <ID>Total Deceased Age 06</ID>
+          <Name>Total Deceased Age 06</Name>
+          <Source dwd:design-time-name="c4eead64-9b20-47e9-8aeb-4acfdd1f993e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="62367ba6-b927-47bf-8ab7-f9396b92fa78">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_deceased_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4bfebe5b-f065-4f0f-aadc-3987de4b986c">
+          <ID>Total Deceased Age 07</ID>
+          <Name>Total Deceased Age 07</Name>
+          <Source dwd:design-time-name="87931fed-bedd-4b26-a6ef-b98ae31233e8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7793b745-77e2-4846-a686-c791ff3ed964">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_deceased_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b317bfeb-e58e-44eb-b778-7f75d4a041c3">
+          <ID>Total Deceased Age 08</ID>
+          <Name>Total Deceased Age 08</Name>
+          <Source dwd:design-time-name="3cc88153-60d2-4ae5-ae27-86d198880862">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="186c8598-cc8b-4368-9977-bfba3c751bfc">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_deceased_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bf1c1d46-051e-4da3-9c4a-dfd35f208b68">
+          <ID>Total Deceased Age 09</ID>
+          <Name>Total Deceased Age 09</Name>
+          <Source dwd:design-time-name="7d4da0d2-5a87-48cd-8cc7-7035e0598480">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f4a3d89a-c2b9-4747-a698-0f7620e5868c">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_deceased_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="850d5a52-8d63-4cb5-8103-bdcbf4449052">
+          <ID>New Recovered Age 00</ID>
+          <Name>New Recovered Age 00</Name>
+          <Source dwd:design-time-name="53554979-8fde-4058-9f44-b7331dbbd9ce">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6a4284b7-69a7-4954-be7b-e95ed2cfd5bc">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_recovered_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3e2b677f-cd8d-4304-838f-26b110b4c2a7">
+          <ID>New Recovered Age 01</ID>
+          <Name>New Recovered Age 01</Name>
+          <Source dwd:design-time-name="60572387-9aa6-4ae4-96e0-244bb37b7ba0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1d2b02e4-7632-414d-9cff-7faa9f1c1b86">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_recovered_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="314b1617-a613-4b81-91f9-661160de71ff">
+          <ID>New Recovered Age 02</ID>
+          <Name>New Recovered Age 02</Name>
+          <Source dwd:design-time-name="46571011-311a-47cf-adb5-83fea67cca5a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f77a2bd9-2d80-48f7-9050-68db3697c415">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_recovered_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="42a026d0-ca2c-405c-ad81-6e46133b4bb7">
+          <ID>New Recovered Age 03</ID>
+          <Name>New Recovered Age 03</Name>
+          <Source dwd:design-time-name="7062947f-76d7-4099-ae67-ddc4c5e340ba">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5ba08601-bdbd-43e4-a2f1-db050ef76a91">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_recovered_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3ccee815-2073-45f3-bcd8-2280ca52ca9a">
+          <ID>New Recovered Age 04</ID>
+          <Name>New Recovered Age 04</Name>
+          <Source dwd:design-time-name="e5fde40c-2370-4d0e-a170-0efcc2014bc6">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ce2e2ac3-c3aa-4d31-976c-25d84db576ef">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_recovered_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="69be5667-41b9-4aab-a3aa-b85ffa20a38a">
+          <ID>New Recovered Age 05</ID>
+          <Name>New Recovered Age 05</Name>
+          <Source dwd:design-time-name="1e3d763d-429d-48ca-bac9-b4530239a54b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d752e6a7-e40d-4194-b826-29bb459c31e4">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_recovered_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="022657cb-bfe1-4a30-acec-67240384a928">
+          <ID>New Recovered Age 06</ID>
+          <Name>New Recovered Age 06</Name>
+          <Source dwd:design-time-name="8c62c676-8f5e-4989-86eb-1dbb96f74900">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7a73e7b6-9363-4ad6-8fe7-10f241704c47">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_recovered_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ba8373c1-873a-4e03-be05-44fe0713b265">
+          <ID>New Recovered Age 07</ID>
+          <Name>New Recovered Age 07</Name>
+          <Source dwd:design-time-name="155c2de9-a5d7-4b79-a66d-dc4ee09a51d4">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="691647cf-aec5-40d6-887e-031f8eae91f5">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_recovered_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d00e63c9-f103-4194-a584-1ebf7dde85ab">
+          <ID>New Recovered Age 08</ID>
+          <Name>New Recovered Age 08</Name>
+          <Source dwd:design-time-name="80647b63-f7e4-4ce1-8d68-daea4cd13246">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8e573ff0-5ceb-4598-846b-06161d736f82">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_recovered_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="01ddd4d0-933b-4d70-ada0-a06baa6571b2">
+          <ID>New Recovered Age 09</ID>
+          <Name>New Recovered Age 09</Name>
+          <Source dwd:design-time-name="e5ee9669-b7f2-4d1e-8565-637f05ae46cf">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="dfa96f3d-4a59-4fdd-b816-832a496ba1b5">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_recovered_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9defa803-f10f-46af-a78b-b71cbbe5504a">
+          <ID>Total Recovered Age 00</ID>
+          <Name>Total Recovered Age 00</Name>
+          <Source dwd:design-time-name="c1b19310-d0b8-4039-b8fd-fdebf82710e9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c52cc5e3-e589-43bf-8c06-55a5a949385e">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_recovered_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f2ad7513-fcb1-4bb0-8977-181b967fd39a">
+          <ID>Total Recovered Age 01</ID>
+          <Name>Total Recovered Age 01</Name>
+          <Source dwd:design-time-name="608030ae-6169-4f65-a0c2-2bc1f83f2614">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="85df0819-952d-4c85-a8a1-6444bb3f49e3">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_recovered_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7045a028-8d57-46a4-8246-df4caf7ee202">
+          <ID>Total Recovered Age 02</ID>
+          <Name>Total Recovered Age 02</Name>
+          <Source dwd:design-time-name="67893eb7-d1bb-44d1-b51f-f45fd52de81d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0d668207-2c66-4eff-9e64-d69ab52340af">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_recovered_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c6f3255b-281d-4fd2-86d5-657947da26b8">
+          <ID>Total Recovered Age 03</ID>
+          <Name>Total Recovered Age 03</Name>
+          <Source dwd:design-time-name="0fcecc9f-4d53-4c15-a53f-e578a84f7ac9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="307ec533-82fe-4b21-8a03-188fcbd7241c">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_recovered_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e185f8c1-4903-4345-8f20-c0c88be6154c">
+          <ID>Total Recovered Age 04</ID>
+          <Name>Total Recovered Age 04</Name>
+          <Source dwd:design-time-name="07a612f0-e53a-47c0-8419-b64073353cff">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="268451ce-8b85-4739-8f52-94137234ad07">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_recovered_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ef28c0ef-d304-4cb8-982d-4dfac372f0c8">
+          <ID>Total Recovered Age 05</ID>
+          <Name>Total Recovered Age 05</Name>
+          <Source dwd:design-time-name="4d955544-b0e6-4a5f-9908-e2c8f485d5a1">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5bcc15c4-aa69-427f-a5ae-4b57387e5453">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_recovered_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f0bfd8f8-d5f3-4267-a27a-04158eb4f4e1">
+          <ID>Total Recovered Age 06</ID>
+          <Name>Total Recovered Age 06</Name>
+          <Source dwd:design-time-name="d1a3b332-5d8b-436f-97cc-2b4cccfc60e1">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c5b371bd-d948-4e33-b327-006e3c6b5c7b">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_recovered_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ca7272cf-a8a7-4677-807e-a49687335f12">
+          <ID>Total Recovered Age 07</ID>
+          <Name>Total Recovered Age 07</Name>
+          <Source dwd:design-time-name="99a92d07-94da-452d-8d52-a0a8213697a3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2ad8e5d0-b7b6-489d-8844-1c3f60f341cf">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_recovered_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2010ee0c-70e9-4c0a-bce8-1ae72b355da5">
+          <ID>Total Recovered Age 08</ID>
+          <Name>Total Recovered Age 08</Name>
+          <Source dwd:design-time-name="d5cc6c27-3cc2-4634-adea-9475cee1bc92">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4145d182-d25f-4a65-b297-4f5dc7201b2a">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_recovered_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bf41e150-1b0e-422a-8aba-c8a8447ca3da">
+          <ID>Total Recovered Age 09</ID>
+          <Name>Total Recovered Age 09</Name>
+          <Source dwd:design-time-name="ca5c6ee7-be13-467d-a7ad-2f8fc02c9474">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3bdef1cc-0763-4fc9-b791-f57d38694ba2">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_recovered_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f91a1d00-a57f-44e4-9fdc-5dec4acd0299">
+          <ID>New Tested Age 00</ID>
+          <Name>New Tested Age 00</Name>
+          <Source dwd:design-time-name="c8903a0a-599e-4495-9d0d-6ef98d9a7c72">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7adc000d-29dc-434f-ba82-fea38585ec47">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_tested_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7191a055-7f2a-4ab1-ba0e-1762002554cc">
+          <ID>New Tested Age 01</ID>
+          <Name>New Tested Age 01</Name>
+          <Source dwd:design-time-name="11f71eaa-f827-4f11-996a-b3698db6dad8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7b8a19ad-376d-46f4-be79-ef8c8046a6ad">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_tested_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8116823e-4147-4d94-a8f9-46b7fe7d9425">
+          <ID>New Tested Age 02</ID>
+          <Name>New Tested Age 02</Name>
+          <Source dwd:design-time-name="8fc5fd2b-9748-4599-8d50-c7c8cb424731">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2c8c4c42-c0f3-400a-92db-2572dec24752">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_tested_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7696170e-9501-46f7-b6ca-1f223d51cbb3">
+          <ID>New Tested Age 03</ID>
+          <Name>New Tested Age 03</Name>
+          <Source dwd:design-time-name="d46e0d71-6073-47eb-895c-71358e6d3972">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e8d0cd07-8149-44ef-b521-30bd24ab99bf">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_tested_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="df20fb89-80a1-4202-bba1-8fc6f4566bd7">
+          <ID>New Tested Age 04</ID>
+          <Name>New Tested Age 04</Name>
+          <Source dwd:design-time-name="24ee677d-925c-40ac-9c93-ba071c9eb1bf">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c69ae241-f642-43e4-9451-42d59ea6a74e">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_tested_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a914ee58-0583-4933-8424-e3453948e5dd">
+          <ID>New Tested Age 05</ID>
+          <Name>New Tested Age 05</Name>
+          <Source dwd:design-time-name="2fd51c37-20c3-48dc-a039-272fe9f5dbaa">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ce78cc3f-537f-4ec1-9d60-de1434e3c86c">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_tested_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="25f13ad3-902b-462a-a45a-8893864f0716">
+          <ID>New Tested Age 06</ID>
+          <Name>New Tested Age 06</Name>
+          <Source dwd:design-time-name="c1706e57-43e1-47a6-8f8f-8e0b526d9a9e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0849b162-fcb9-4e0f-b0dd-d3627eb8dd63">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_tested_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c43b2d61-f1ae-4022-ab7d-a991a51c6d62">
+          <ID>New Tested Age 07</ID>
+          <Name>New Tested Age 07</Name>
+          <Source dwd:design-time-name="f3c1c172-1a8b-47e2-b6ca-020032095080">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2e4504f4-9c66-456d-a647-98a6c2a12d10">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_tested_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="16599574-d314-41cc-8406-fe900def9efa">
+          <ID>New Tested Age 08</ID>
+          <Name>New Tested Age 08</Name>
+          <Source dwd:design-time-name="e6742728-a0c6-435c-bf2d-e9e5d1e8b8f9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f8285793-b5a5-4b24-99f9-a5e88a29e221">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_tested_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fb1a5f6e-e7a0-42b7-acdb-ff22f835e9dc">
+          <ID>New Tested Age 09</ID>
+          <Name>New Tested Age 09</Name>
+          <Source dwd:design-time-name="db8dbac8-abb8-4a1e-93c9-607672992f2c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1633da90-3bee-4beb-b862-ed240ac1c280">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_tested_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="01db0efe-4b21-411b-8bb0-615f16f4e516">
+          <ID>Total Tested Age 00</ID>
+          <Name>Total Tested Age 00</Name>
+          <Source dwd:design-time-name="e4710e5b-22f7-41f2-b56b-d3d91c5d19ff">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="19a1d72c-4c9d-4bdb-a28f-c43b398339ca">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_tested_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5faed5ab-63c4-4000-80da-3400b01c0774">
+          <ID>Total Tested Age 01</ID>
+          <Name>Total Tested Age 01</Name>
+          <Source dwd:design-time-name="4c1eb163-b680-4d58-88a0-7133723c9e02">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d7926be1-204d-4c9b-b3a8-71bc921e5f29">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_tested_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e210d3d7-4a60-4f74-87be-83d270aa50a9">
+          <ID>Total Tested Age 02</ID>
+          <Name>Total Tested Age 02</Name>
+          <Source dwd:design-time-name="be4652a7-2a5b-406f-837a-f8a4b5234c5e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2bcfa2ac-4fae-4e58-a3a9-098f16a76ddc">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_tested_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="673603dc-567e-4dd6-8e40-b336f2ea4ab6">
+          <ID>Total Tested Age 03</ID>
+          <Name>Total Tested Age 03</Name>
+          <Source dwd:design-time-name="e0262fed-60ba-4403-b035-8c5d552166ed">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5c0d46a6-63f6-4b6a-8e11-38eff3889bca">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_tested_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9c2500df-e936-49f8-bb9f-706279fb5773">
+          <ID>Total Tested Age 04</ID>
+          <Name>Total Tested Age 04</Name>
+          <Source dwd:design-time-name="e12af0f2-c861-4eae-89b0-e064fb100777">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4098fa08-4d0f-4acc-920c-5130feb099b2">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_tested_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a7648bde-097a-42d6-a912-7c964f2a2761">
+          <ID>Total Tested Age 05</ID>
+          <Name>Total Tested Age 05</Name>
+          <Source dwd:design-time-name="f319f9f7-9720-4d8b-b890-2236f35f3b6b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4b30602a-a18d-416f-a230-3ca62128447d">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_tested_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6f3cbe05-81f2-46a8-b87d-aee2cae35687">
+          <ID>Total Tested Age 06</ID>
+          <Name>Total Tested Age 06</Name>
+          <Source dwd:design-time-name="dd771535-3373-4eac-b37a-aad2af0ee5a2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a24203cd-2bcb-427d-8521-edd39e9f4c45">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_tested_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a2e5177b-5e08-42a0-87e9-256577f8a685">
+          <ID>Total Tested Age 07</ID>
+          <Name>Total Tested Age 07</Name>
+          <Source dwd:design-time-name="b897f833-617f-4c20-aafe-90e6b8484cee">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3d8af0a7-d899-4f3e-bb39-b4a2c461d0a1">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_tested_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9ed410bb-5666-436b-bc75-bdff3b94cc8e">
+          <ID>Total Tested Age 08</ID>
+          <Name>Total Tested Age 08</Name>
+          <Source dwd:design-time-name="111c3c52-152a-475e-8d9c-e52d7bde8a9e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f6761e83-0aee-4fb0-be7d-f3c8a0ebe883">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_tested_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="849c0f31-209d-4402-bad7-4b666e5f6d0f">
+          <ID>Total Tested Age 09</ID>
+          <Name>Total Tested Age 09</Name>
+          <Source dwd:design-time-name="d3c9d3ba-11bf-4224-ba58-2b9543a5e99a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e633d189-5d64-4e96-8af6-4661e35bc857">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_tested_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bcb49867-26cd-4f70-8925-c058d89307f3">
+          <ID>New Hospitalized Age 00</ID>
+          <Name>New Hospitalized Age 00</Name>
+          <Source dwd:design-time-name="ec2184c9-5d4d-4157-8b3e-5cb0fad06343">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c857852e-79f4-428d-b78f-ce0bf7ae2538">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_hospitalized_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="40586253-2f2a-4838-9ec0-da406262ed01">
+          <ID>New Hospitalized Age 01</ID>
+          <Name>New Hospitalized Age 01</Name>
+          <Source dwd:design-time-name="eaec3a33-ffdb-4cb3-9228-f2e4e984be14">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="33d3dd1b-f7b8-4b56-b941-1e21430d471e">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_hospitalized_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9fb2b47f-e0b7-4ae0-b156-c1ce1c478d83">
+          <ID>New Hospitalized Age 02</ID>
+          <Name>New Hospitalized Age 02</Name>
+          <Source dwd:design-time-name="dc522bbc-79f5-4850-8f46-ec6fcc6bf348">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e4d4829b-ce4f-4b2b-8d34-cf17345bd0eb">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_hospitalized_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1dd9431e-6370-4f8d-87ee-9efc560edaac">
+          <ID>New Hospitalized Age 03</ID>
+          <Name>New Hospitalized Age 03</Name>
+          <Source dwd:design-time-name="9aa6053d-41c2-4feb-ac73-b4e0442a364a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d610ee2c-3234-4195-8f1a-2434287a6933">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_hospitalized_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="82ea5d4b-1875-49d6-82e6-52ad2dc1b69c">
+          <ID>New Hospitalized Age 04</ID>
+          <Name>New Hospitalized Age 04</Name>
+          <Source dwd:design-time-name="c76d8081-8308-4ea8-9f58-a7d0503b4a22">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b346ef4d-ae73-49c0-9120-ceebe3a8a52a">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_hospitalized_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3ebfdb39-a6e5-4e66-8fcd-702030d4d9f7">
+          <ID>New Hospitalized Age 05</ID>
+          <Name>New Hospitalized Age 05</Name>
+          <Source dwd:design-time-name="91edc4df-8ba0-42de-ab76-2cee4610f3b6">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5bf29dcc-8add-4633-8b95-6b588701987e">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_hospitalized_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ab15292f-f176-4c1d-ab11-62dc25a5a341">
+          <ID>New Hospitalized Age 06</ID>
+          <Name>New Hospitalized Age 06</Name>
+          <Source dwd:design-time-name="1d008c28-ba11-4954-bdf3-8eb9d956b488">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="69c01ff6-7c55-45e6-82f3-9304adfeb369">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_hospitalized_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="669b967a-4c16-48b7-a60d-9e9283f6dac4">
+          <ID>New Hospitalized Age 07</ID>
+          <Name>New Hospitalized Age 07</Name>
+          <Source dwd:design-time-name="2f9dfab5-973f-4778-998b-8bd533b84be8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4aef022b-914f-4bf3-b31e-5844d5985d3d">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_hospitalized_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0059d7a2-16a9-4bb3-9c06-2c8c35724c6f">
+          <ID>New Hospitalized Age 08</ID>
+          <Name>New Hospitalized Age 08</Name>
+          <Source dwd:design-time-name="3ed77d4d-59e4-4922-94dc-69ff558f52b5">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="225ce302-b957-4952-a33d-80209a1a22a4">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_hospitalized_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="81628f92-9ffc-4c9d-9976-afb697444827">
+          <ID>New Hospitalized Age 09</ID>
+          <Name>New Hospitalized Age 09</Name>
+          <Source dwd:design-time-name="72dff72e-9073-4f2a-ba21-569ba38a1c0e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3312fbb2-f211-418e-85b3-46af3869f916">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_hospitalized_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1a9b797f-96d7-4202-9f23-375c4a15d60e">
+          <ID>Total Hospitalized Age 00</ID>
+          <Name>Total Hospitalized Age 00</Name>
+          <Source dwd:design-time-name="697d357f-9b87-401f-b8c1-a0096a0309dc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="abadecb0-c8d2-4e9f-90d4-92b6a8451648">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_hospitalized_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f2b08e67-9808-4be2-b814-5813edbac736">
+          <ID>Total Hospitalized Age 01</ID>
+          <Name>Total Hospitalized Age 01</Name>
+          <Source dwd:design-time-name="d0a77932-4560-47c4-b84c-154d562e3eb0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2251b0a9-48b3-4322-9da5-b2a8aefdf789">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_hospitalized_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5a582d83-7ce2-4e48-aa2b-abcf2fc4ebe1">
+          <ID>Total Hospitalized Age 02</ID>
+          <Name>Total Hospitalized Age 02</Name>
+          <Source dwd:design-time-name="2e1c0ee4-79f2-474a-b671-1575999ba54b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2b17823a-2e59-47cd-adfd-41e98ce79018">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_hospitalized_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1c1b63ea-6683-45af-a4be-cc33ea356443">
+          <ID>Total Hospitalized Age 03</ID>
+          <Name>Total Hospitalized Age 03</Name>
+          <Source dwd:design-time-name="29593332-a617-4fbc-ae63-18055820700f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="dd62040c-f8d6-4ddd-9026-376e4d47f0f8">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_hospitalized_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="49bd9ee5-b02f-4d4c-a3ec-508b36fc43d2">
+          <ID>Total Hospitalized Age 04</ID>
+          <Name>Total Hospitalized Age 04</Name>
+          <Source dwd:design-time-name="8226d91f-e522-442b-b793-f2a47a467a81">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="26710861-d2e5-4cd8-8ad8-bed4d6d47b21">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_hospitalized_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="abb35ba4-a676-4596-97b4-797bfac7bb77">
+          <ID>Total Hospitalized Age 05</ID>
+          <Name>Total Hospitalized Age 05</Name>
+          <Source dwd:design-time-name="5ab901fe-51db-4850-9a76-3119ce1ea257">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="219a42a7-7989-4827-b017-26482a5767ce">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_hospitalized_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="70fea605-cf34-42a8-9601-5ae982d22d92">
+          <ID>Total Hospitalized Age 06</ID>
+          <Name>Total Hospitalized Age 06</Name>
+          <Source dwd:design-time-name="894fa8e5-06c3-47e0-bc90-01b5d67d6ce7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4e6d794d-947d-41ac-89b7-827328d36f5f">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_hospitalized_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0d3c4aad-2cf8-4cb9-9b6e-921833da464e">
+          <ID>Total Hospitalized Age 07</ID>
+          <Name>Total Hospitalized Age 07</Name>
+          <Source dwd:design-time-name="422b895c-7824-4c96-bf0a-cc4da5538431">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9e2aa0f2-990b-4919-a957-64f065745f11">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_hospitalized_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f0329763-e98e-4190-a08b-68ce3bee6e18">
+          <ID>Total Hospitalized Age 08</ID>
+          <Name>Total Hospitalized Age 08</Name>
+          <Source dwd:design-time-name="35447703-9f23-4bea-8751-dc14c421013f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d8970da6-d71f-4ea9-84de-2eeafcd6a87e">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_hospitalized_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="af8eadae-4632-4612-87b7-9bcaea659b17">
+          <ID>Total Hospitalized Age 09</ID>
+          <Name>Total Hospitalized Age 09</Name>
+          <Source dwd:design-time-name="bdb14c69-d30c-4a26-8768-d127a236df82">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1e35f7f6-a359-43ae-8126-308ce6b68c31">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_hospitalized_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3b8ad2c8-d094-40f1-b018-6449bad478ee">
+          <ID>Current Hospitalized Age 00</ID>
+          <Name>Current Hospitalized Age 00</Name>
+          <Source dwd:design-time-name="8ae67d40-90b2-4c04-afb0-dfd4a2d47075">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0bc40a86-cc17-40c1-aaeb-9efa5572ba22">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_hospitalized_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c516276a-6efb-4c9f-9d0e-65eb1e0fef92">
+          <ID>Current Hospitalized Age 01</ID>
+          <Name>Current Hospitalized Age 01</Name>
+          <Source dwd:design-time-name="9c40eaa0-7af2-4c29-891e-5f9431cbc237">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d6ec026e-3ba4-4420-bd78-14c9aa641b84">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_hospitalized_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="412aa330-22b5-444e-a5e6-1ef5db2c04ab">
+          <ID>Current Hospitalized Age 02</ID>
+          <Name>Current Hospitalized Age 02</Name>
+          <Source dwd:design-time-name="073f22e6-1dda-4132-9568-57305e4b79a4">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1fc0ecb6-b65f-4f61-bdf7-3c6dd045710a">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_hospitalized_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="471f8713-981c-4ac8-b070-6b69733a2ac1">
+          <ID>Current Hospitalized Age 03</ID>
+          <Name>Current Hospitalized Age 03</Name>
+          <Source dwd:design-time-name="aff3e270-4501-4857-89d0-80b3aa307773">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="edc71db2-6421-4e9f-bd58-2ee5128e14d0">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_hospitalized_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="53f4869a-c1eb-4d4a-b631-d0433770a2ae">
+          <ID>Current Hospitalized Age 04</ID>
+          <Name>Current Hospitalized Age 04</Name>
+          <Source dwd:design-time-name="48d20ac7-c407-4b1e-aa6f-455502af4b35">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b72c7b4e-1027-46e9-a0fb-691be0a6c007">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_hospitalized_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7727f234-788f-4d57-9b8a-ce53e7383274">
+          <ID>Current Hospitalized Age 05</ID>
+          <Name>Current Hospitalized Age 05</Name>
+          <Source dwd:design-time-name="3b35fda1-6d8d-4ef9-bae3-371dd6dde805">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ee25546e-0cb6-4e2d-85ed-e9bd0763a69c">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_hospitalized_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="94d56626-9a69-46ec-9f37-2acc933f3918">
+          <ID>Current Hospitalized Age 06</ID>
+          <Name>Current Hospitalized Age 06</Name>
+          <Source dwd:design-time-name="390201f6-55e4-4c65-8549-9f31d1aed210">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="29f08ad2-b0d1-481f-a12e-5a52e808e261">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_hospitalized_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ffff91aa-fd97-42e5-9b6e-ce9531b2fa6b">
+          <ID>Current Hospitalized Age 07</ID>
+          <Name>Current Hospitalized Age 07</Name>
+          <Source dwd:design-time-name="3a1edf5c-8fa6-4756-9b0c-683354bdf1ff">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="02b72b5a-db54-4aeb-8f7e-b19647d7f03b">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_hospitalized_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9246da7b-a85c-47ad-860a-2feb8571c1a6">
+          <ID>Current Hospitalized Age 08</ID>
+          <Name>Current Hospitalized Age 08</Name>
+          <Source dwd:design-time-name="5a6ba23b-c33a-41b0-aefd-131cabe41592">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="568c2422-1840-480c-96dc-002de16cb4f7">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_hospitalized_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="42173689-969d-4ea1-b643-63cacae45105">
+          <ID>Current Hospitalized Age 09</ID>
+          <Name>Current Hospitalized Age 09</Name>
+          <Source dwd:design-time-name="167411d5-4506-474b-99b6-c0046c832c2e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f7ceca24-2bfa-4938-bf58-c51f73e3cb4d">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_hospitalized_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9331f901-0eca-4f5b-ab6a-4e75e4547803">
+          <ID>New Intensive Care Age 00</ID>
+          <Name>New Intensive Care Age 00</Name>
+          <Source dwd:design-time-name="409d6e1f-5cde-4f3b-84e7-febe24e91ef0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9bea0d68-b299-48ee-ae78-9c1c98f92e43">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_intensive_care_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e8dad7d0-d06f-4faa-8ea5-40f6e167c217">
+          <ID>New Intensive Care Age 01</ID>
+          <Name>New Intensive Care Age 01</Name>
+          <Source dwd:design-time-name="2c77cd3d-71b6-407d-9df8-e7fb826c3012">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2a4be091-7151-4194-92e2-3a2f2b9f69d9">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_intensive_care_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="242776d1-689f-4733-ad86-44ca7aa1c70f">
+          <ID>New Intensive Care Age 02</ID>
+          <Name>New Intensive Care Age 02</Name>
+          <Source dwd:design-time-name="8d270292-fb08-4ed1-8f69-cbd2e40f918a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2da63c44-f411-4dc0-8228-db3b95653870">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_intensive_care_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="25897b6a-acfc-494e-b702-ec40f29e95b3">
+          <ID>New Intensive Care Age 03</ID>
+          <Name>New Intensive Care Age 03</Name>
+          <Source dwd:design-time-name="46df45bb-a358-43cb-8e9b-8ecd155b4449">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="544e70be-5e0b-48f5-9c7f-57bb27ed76a6">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_intensive_care_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a5e15142-9547-43ba-bcbc-ab4a6dc88eab">
+          <ID>New Intensive Care Age 04</ID>
+          <Name>New Intensive Care Age 04</Name>
+          <Source dwd:design-time-name="ffe7ce54-b21c-4c5c-8fc9-d82504733d8d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="eee756bf-883f-4b67-8451-d9238e014ae8">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_intensive_care_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e0f71a3c-0f68-415d-ac32-8a02c40b07ee">
+          <ID>New Intensive Care Age 05</ID>
+          <Name>New Intensive Care Age 05</Name>
+          <Source dwd:design-time-name="635bb3fc-e3c3-47c7-9774-893e61f0d159">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b83074a7-e354-4058-b474-15c8727b4473">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_intensive_care_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8e8bb67a-1c33-4b57-855e-f263bfe7472f">
+          <ID>New Intensive Care Age 06</ID>
+          <Name>New Intensive Care Age 06</Name>
+          <Source dwd:design-time-name="7001a179-1ebc-4743-9914-07854472e99b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="428944df-69d5-491b-81f2-783a6c6fdcbd">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_intensive_care_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b21d368f-b387-4c8c-bed4-43b9f24ee486">
+          <ID>New Intensive Care Age 07</ID>
+          <Name>New Intensive Care Age 07</Name>
+          <Source dwd:design-time-name="360f477b-7eb9-417a-946b-b7ce6949034e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3fe0302c-aeaf-4995-881f-23e103cc874d">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_intensive_care_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="73a2c5ce-342c-4ef0-81e4-4a5a07666a9c">
+          <ID>New Intensive Care Age 08</ID>
+          <Name>New Intensive Care Age 08</Name>
+          <Source dwd:design-time-name="c108482d-21dc-401a-8697-8d84a0ddfd7b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="71b2d0e4-d286-4ca9-8ac9-3955b30e46fc">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_intensive_care_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="619644f7-95bc-402f-926c-aac6af8ba4fd">
+          <ID>New Intensive Care Age 09</ID>
+          <Name>New Intensive Care Age 09</Name>
+          <Source dwd:design-time-name="334ee0ff-e999-4382-8fe7-0adec860762e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b5651d41-b443-4508-a142-f8bf090909ce">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_intensive_care_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="401b79a3-cf7d-4b37-8a5f-4398e824fcd4">
+          <ID>Total Intensive Care Age 00</ID>
+          <Name>Total Intensive Care Age 00</Name>
+          <Source dwd:design-time-name="df51e242-4f2d-443a-9887-40cb5bd0d4f7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d0a0d686-cc6a-440d-8ff8-ec296da2b75c">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_intensive_care_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0dfb2d15-157a-47f2-8fa6-54895aa947db">
+          <ID>Total Intensive Care Age 01</ID>
+          <Name>Total Intensive Care Age 01</Name>
+          <Source dwd:design-time-name="717be2ab-3a7b-4dce-b23c-31df77435142">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7a782c45-644f-46ac-8e7a-2fe57b5d8d2c">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_intensive_care_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2cdd4032-5bc2-4371-860a-e68ecc63a45f">
+          <ID>Total Intensive Care Age 02</ID>
+          <Name>Total Intensive Care Age 02</Name>
+          <Source dwd:design-time-name="18c29aa4-2d94-4d5c-abd6-338acab55c38">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="52f7dcbc-fdd4-4138-921d-b4bce68fffcf">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_intensive_care_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f532c22e-5919-40f3-9e5d-e3ed47b239b3">
+          <ID>Total Intensive Care Age 03</ID>
+          <Name>Total Intensive Care Age 03</Name>
+          <Source dwd:design-time-name="bb23529d-96b1-4795-ac40-16a2427d4e3f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c5a91932-9dad-4773-ae5e-c29d225f1767">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_intensive_care_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4134413f-2228-47ec-9821-2c2b19380226">
+          <ID>Total Intensive Care Age 04</ID>
+          <Name>Total Intensive Care Age 04</Name>
+          <Source dwd:design-time-name="f295e586-9151-40c2-9b9c-8f9a3029d457">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e41aff69-61be-46f0-ada6-71771741ae1b">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_intensive_care_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="69d89820-fae2-4d8d-8f31-948de14cbcfd">
+          <ID>Total Intensive Care Age 05</ID>
+          <Name>Total Intensive Care Age 05</Name>
+          <Source dwd:design-time-name="7f8b0ad7-fde8-4f1a-b236-7ab3a2cc6cc6">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ff3d39da-e5a2-4d7b-9995-e05c7f9b51bd">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_intensive_care_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9fbfe300-bbaf-4e59-a7db-a1fccb66895f">
+          <ID>Total Intensive Care Age 06</ID>
+          <Name>Total Intensive Care Age 06</Name>
+          <Source dwd:design-time-name="a3404883-0460-402b-99a7-9bddbd0feaeb">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4ab3ef0b-830d-4e07-8d9e-b93723ee50c2">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_intensive_care_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6aa3a330-becd-4e9c-8f33-a9b4c809a017">
+          <ID>Total Intensive Care Age 07</ID>
+          <Name>Total Intensive Care Age 07</Name>
+          <Source dwd:design-time-name="ebebd005-52a1-42dd-8d27-8ae4eafb959d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="302ccd6e-c026-47ef-bb65-79f55dd8bcfc">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_intensive_care_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="53b0f7e3-18af-4cd1-b97c-384cc8f74fd5">
+          <ID>Total Intensive Care Age 08</ID>
+          <Name>Total Intensive Care Age 08</Name>
+          <Source dwd:design-time-name="b02ec767-f933-40d3-a3f5-bdbbeedaf9fc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b4c8a442-628d-455b-bf4b-42d49db904d1">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_intensive_care_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3048847b-a520-4f5e-b6f2-6f75d12d5858">
+          <ID>Total Intensive Care Age 09</ID>
+          <Name>Total Intensive Care Age 09</Name>
+          <Source dwd:design-time-name="085f361e-7ff5-4224-a5a1-659d9550903c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fcd59277-f8dd-4c72-8f36-bc99e2f127bc">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_intensive_care_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="22126b03-0348-4e48-be86-b3d57ddb220f">
+          <ID>Current Intensive Care Age 00</ID>
+          <Name>Current Intensive Care Age 00</Name>
+          <Source dwd:design-time-name="b8962a1d-43cc-456e-9f4a-74dbf7458238">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ff658257-7b03-4b4d-8d60-1e8ef11cca64">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_intensive_care_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8c93cfb6-b658-4f83-b85b-dbc22a70c9c4">
+          <ID>Current Intensive Care Age 01</ID>
+          <Name>Current Intensive Care Age 01</Name>
+          <Source dwd:design-time-name="2b53b787-9901-4c6d-aabf-c4f9b9b6f7cd">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="48685fa8-a644-49ae-b3b5-ef7aed49338b">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_intensive_care_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fec3978a-fb0b-4691-aaea-d7bdda7fc857">
+          <ID>Current Intensive Care Age 02</ID>
+          <Name>Current Intensive Care Age 02</Name>
+          <Source dwd:design-time-name="ee174a58-676a-40d4-8e2b-5e976051c194">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e4d8abf4-deff-4cf5-85a2-661e28c13a6e">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_intensive_care_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d5f95a38-e0b9-432b-b205-ed953700d087">
+          <ID>Current Intensive Care Age 03</ID>
+          <Name>Current Intensive Care Age 03</Name>
+          <Source dwd:design-time-name="ac0cde9f-6e92-465a-b076-be2c4da396b2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3f86203a-c2b1-4a7a-8a04-0d30a1be4259">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_intensive_care_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="14a7cb10-b7e2-4fcd-a837-cc3b9b8444ce">
+          <ID>Current Intensive Care Age 04</ID>
+          <Name>Current Intensive Care Age 04</Name>
+          <Source dwd:design-time-name="a8757db9-bc50-4554-afcb-1a292946212f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d8f6e237-2e6f-490c-a788-f031eb6f9b21">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_intensive_care_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="14a941f3-c8ba-413c-8e73-0ee9ce288416">
+          <ID>Current Intensive Care Age 05</ID>
+          <Name>Current Intensive Care Age 05</Name>
+          <Source dwd:design-time-name="21624506-1bad-4445-a7d6-dc916c9aea84">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="391d80d4-34d7-4834-a717-d633186ae4da">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_intensive_care_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8c897fed-d205-48fa-b813-c0aca12e9ead">
+          <ID>Current Intensive Care Age 06</ID>
+          <Name>Current Intensive Care Age 06</Name>
+          <Source dwd:design-time-name="4f5e2c05-44b3-4878-b526-af3dbe62728e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f7f5fb99-7a72-419d-8cc4-3bb45e4a9973">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_intensive_care_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5de49a2c-23be-41f8-b435-b4d93b34fb9e">
+          <ID>Current Intensive Care Age 07</ID>
+          <Name>Current Intensive Care Age 07</Name>
+          <Source dwd:design-time-name="a17cac3c-a815-49e4-b503-5776e2d9290e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7f75deab-2200-441b-b498-5034cc2f5a74">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_intensive_care_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4af2a0fb-1e89-4c6f-901d-d1fb9522a576">
+          <ID>Current Intensive Care Age 08</ID>
+          <Name>Current Intensive Care Age 08</Name>
+          <Source dwd:design-time-name="2aaa628f-7ca0-4328-8914-5afe081c25de">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d4781eea-7c59-4e11-a2c3-e62bac974a26">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_intensive_care_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="42d83694-2af0-4189-b527-36caba59507a">
+          <ID>Current Intensive Care Age 09</ID>
+          <Name>Current Intensive Care Age 09</Name>
+          <Source dwd:design-time-name="c4331837-0d08-4e9b-a838-1026b54ddc87">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6f3aebdc-190f-4a72-bc55-d8ca5b562185">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_intensive_care_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="2367028d-c4c0-4159-a74d-731e41ee9076">
+          <ID>New Ventilator Age 00</ID>
+          <Name>New Ventilator Age 00</Name>
+          <Source dwd:design-time-name="35a02cc2-261c-468c-948d-2104b703e49f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cfb18dd0-abf6-498c-ac60-2089dee984b6">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_ventilator_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ba9fc758-0df9-44f0-a895-ecbd55625d74">
+          <ID>New Ventilator Age 01</ID>
+          <Name>New Ventilator Age 01</Name>
+          <Source dwd:design-time-name="6e0f5448-6142-4730-81ed-cce9d2f0df7f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d8222178-7758-4ddb-b6dc-9f936760a1ce">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_ventilator_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="714d4ceb-29ee-4c68-8eb2-f547dbc8d846">
+          <ID>New Ventilator Age 02</ID>
+          <Name>New Ventilator Age 02</Name>
+          <Source dwd:design-time-name="880caddd-0e1f-4bb2-a0ce-97c93f89a409">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b24f3aaf-a7f7-40d0-8d13-85ec60adde19">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_ventilator_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d0d2c867-677e-40bf-837c-2ace729fed52">
+          <ID>New Ventilator Age 03</ID>
+          <Name>New Ventilator Age 03</Name>
+          <Source dwd:design-time-name="10ef6cf1-5aa3-4cee-8ce9-6f28fe68c878">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="49680bf9-f2fb-41d8-b47a-edc670dc8252">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_ventilator_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="597386ca-2ee3-4bc0-ae43-7db2919ca317">
+          <ID>New Ventilator Age 04</ID>
+          <Name>New Ventilator Age 04</Name>
+          <Source dwd:design-time-name="d165f1cb-c2c5-4f6f-99b6-63c673e0095c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e5bbe121-2d24-4e44-804b-21a63942771f">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_ventilator_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ca37da81-76d1-4a03-9d02-f0e1ba68748d">
+          <ID>New Ventilator Age 05</ID>
+          <Name>New Ventilator Age 05</Name>
+          <Source dwd:design-time-name="05e25a07-6f07-4cf8-8e4e-c1729000b2ee">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="892fcc90-8abc-4482-8586-f14612405f0b">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_ventilator_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e92249a9-0fd4-4342-ad46-82d54af278f3">
+          <ID>New Ventilator Age 06</ID>
+          <Name>New Ventilator Age 06</Name>
+          <Source dwd:design-time-name="4296add1-8268-484e-a7e7-302e9bebd16b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e144af49-4a6e-4180-94ab-1a0cd64bc37f">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_ventilator_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="fd560539-ef5a-4c35-9552-c4e88d437fc4">
+          <ID>New Ventilator Age 07</ID>
+          <Name>New Ventilator Age 07</Name>
+          <Source dwd:design-time-name="ba88d69e-3fc8-42ff-b735-bef9bb944587">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ddb0e625-74db-4bf5-b619-a48847a3bd27">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_ventilator_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b4909290-d3e7-4731-a369-ff63c01b74b1">
+          <ID>New Ventilator Age 08</ID>
+          <Name>New Ventilator Age 08</Name>
+          <Source dwd:design-time-name="8bf51d70-b29b-4c4a-acf3-9309e7f8e261">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6a0b43af-bf04-4f69-af88-68a9fa924b11">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_ventilator_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0d007f52-ad03-49a2-9ab9-20ad6454daee">
+          <ID>New Ventilator Age 09</ID>
+          <Name>New Ventilator Age 09</Name>
+          <Source dwd:design-time-name="cffe270f-bdab-47f6-b8db-7cb3de52ae24">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3405f99a-173f-4fdc-8347-18dff4049e95">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>new_ventilator_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="98dfaa78-7168-4d0f-845e-ccde6a716c7c">
+          <ID>Total Ventilator Age 00</ID>
+          <Name>Total Ventilator Age 00</Name>
+          <Source dwd:design-time-name="0ee35f52-16c0-4d9c-aea0-d0149e0fcb6d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f32c4214-9afe-4217-a3ed-82cac60fc5e2">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_ventilator_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7c81fdae-c0a1-4cd2-8b6c-326c9a0693a6">
+          <ID>Total Ventilator Age 01</ID>
+          <Name>Total Ventilator Age 01</Name>
+          <Source dwd:design-time-name="f4632ae0-a2f1-4368-901d-bc06476fedcc">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9bfb9bc8-a7d1-4d44-a61a-13ee7d712c0b">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_ventilator_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="482ae819-eaa9-4e8f-b441-79d5f31f26dc">
+          <ID>Total Ventilator Age 02</ID>
+          <Name>Total Ventilator Age 02</Name>
+          <Source dwd:design-time-name="91e58108-012f-4a64-8503-b438c7174364">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="adf8cb43-76e3-4ab8-b084-479a8f2c2328">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_ventilator_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7730f28f-add3-4f7b-a860-94bfea645f36">
+          <ID>Total Ventilator Age 03</ID>
+          <Name>Total Ventilator Age 03</Name>
+          <Source dwd:design-time-name="0e315bf1-c67b-4058-87b0-4e808a782fa0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a00d5a9d-a7e6-4a88-9118-3b3fdcc6d009">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_ventilator_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f6556fea-e609-45cf-aadc-45b4ed61c82d">
+          <ID>Total Ventilator Age 04</ID>
+          <Name>Total Ventilator Age 04</Name>
+          <Source dwd:design-time-name="a3e0cfab-b4e4-406a-8040-67794c79fe4a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0861071a-ae6b-4d1b-a0e3-1d5aa372adcc">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_ventilator_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1a2b5f0a-dffb-438f-b910-97102a745b85">
+          <ID>Total Ventilator Age 05</ID>
+          <Name>Total Ventilator Age 05</Name>
+          <Source dwd:design-time-name="c6df0515-7485-4713-bcc0-08caad6f6635">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4cab4f82-657d-4a17-9560-11f9fff4e180">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_ventilator_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="190cae75-0832-4e2e-9b04-d9f60684ba6b">
+          <ID>Total Ventilator Age 06</ID>
+          <Name>Total Ventilator Age 06</Name>
+          <Source dwd:design-time-name="e92cd660-df0d-48b8-b304-af050b2adef7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d9313113-16f4-4286-b91e-236786688800">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_ventilator_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6b01dd7d-7958-4acb-bcfa-771f7b304874">
+          <ID>Total Ventilator Age 07</ID>
+          <Name>Total Ventilator Age 07</Name>
+          <Source dwd:design-time-name="beee54db-efea-4502-995f-7c4cb704f36d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="30fe6fb7-13df-4344-aee3-d7f1f3152f4d">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_ventilator_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="65c57de9-209c-4124-8688-c66cf6e72364">
+          <ID>Total Ventilator Age 08</ID>
+          <Name>Total Ventilator Age 08</Name>
+          <Source dwd:design-time-name="df3fd0a2-2835-4743-9418-81ccc4f7ce01">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c6b3bc89-424e-4545-8a9b-587296300632">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_ventilator_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e9d53092-ed02-4dca-a768-17a8797fbf32">
+          <ID>Total Ventilator Age 09</ID>
+          <Name>Total Ventilator Age 09</Name>
+          <Source dwd:design-time-name="1c3da285-f419-4bcd-baaf-4b6ac2a7d1a2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6015020f-58ae-45e6-a723-a2392f11e844">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>total_ventilator_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="e5a005e3-bc98-4f03-8dea-3f29b705c5b7">
+          <ID>Current Ventilator Age 00</ID>
+          <Name>Current Ventilator Age 00</Name>
+          <Source dwd:design-time-name="c48f654e-9015-482c-9006-707d9e5096e8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e912ea3d-4ed2-4598-bbf2-19aa697b33d8">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_ventilator_age_00</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7036761f-3b41-4ba2-a122-9c1579b65de3">
+          <ID>Current Ventilator Age 01</ID>
+          <Name>Current Ventilator Age 01</Name>
+          <Source dwd:design-time-name="928a59af-ed42-4deb-b582-8897d0b39caf">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b93e2fca-ac0e-4f77-ba52-0bc650055de4">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_ventilator_age_01</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="999fb961-0168-4195-b13c-75161fa86c04">
+          <ID>Current Ventilator Age 02</ID>
+          <Name>Current Ventilator Age 02</Name>
+          <Source dwd:design-time-name="cd42becd-3e7c-4041-bfb5-05ef19f62ee9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a558d9e6-4db4-4623-8989-0b502f40e27c">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_ventilator_age_02</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="bf3910d6-f432-44cc-af06-2640b369b243">
+          <ID>Current Ventilator Age 03</ID>
+          <Name>Current Ventilator Age 03</Name>
+          <Source dwd:design-time-name="3995ac2f-b0e0-47d3-9e28-5845df5becf1">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cc6b2f30-5bb6-48f6-829a-0aca7980c66b">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_ventilator_age_03</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7e9a636d-f395-46b6-9a10-fa790d548f6b">
+          <ID>Current Ventilator Age 04</ID>
+          <Name>Current Ventilator Age 04</Name>
+          <Source dwd:design-time-name="79d0237f-a7f9-460c-8231-d8792904740d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d1dd19a2-57cf-4c92-a0cf-b0475c68011b">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_ventilator_age_04</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="983263b0-32b9-48e3-a42e-49845d022dc2">
+          <ID>Current Ventilator Age 05</ID>
+          <Name>Current Ventilator Age 05</Name>
+          <Source dwd:design-time-name="7fca483c-d98a-478b-8b6a-30e24786380c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="259aadf0-eee4-4c12-861a-a645861bc179">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_ventilator_age_05</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4a9b5bb2-c09d-492e-bb31-e70370d90bf7">
+          <ID>Current Ventilator Age 06</ID>
+          <Name>Current Ventilator Age 06</Name>
+          <Source dwd:design-time-name="55f9b197-aeba-4e31-91f1-3005c43ea2f0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b0e327f5-7dda-4abe-9dae-02975514edb9">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_ventilator_age_06</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4fb79050-088c-4075-b089-72de737bc55b">
+          <ID>Current Ventilator Age 07</ID>
+          <Name>Current Ventilator Age 07</Name>
+          <Source dwd:design-time-name="99537060-077a-4338-87a6-8b5a28fa3334">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a1cb9874-de3a-4439-bde3-bf3646f0ad2d">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_ventilator_age_07</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1e765b6c-2d12-4938-ade5-5a643b8059f2">
+          <ID>Current Ventilator Age 08</ID>
+          <Name>Current Ventilator Age 08</Name>
+          <Source dwd:design-time-name="b6607136-91cd-4805-9864-e7d00f76c593">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="00d9cfed-1597-42e0-bdc4-22ae0f86140a">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_ventilator_age_08</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="27802370-7c86-412c-acd4-58b8bdd904be">
+          <ID>Current Ventilator Age 09</ID>
+          <Name>Current Ventilator Age 09</Name>
+          <Source dwd:design-time-name="507ad564-e6d2-48a8-adde-eeaef02fad58">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="27efe5ef-a9c2-4851-b8a0-2e49262d9a63">
+              <TableID>Fact_Age</TableID>
+              <ColumnID>current_ventilator_age_09</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5c27379b-eb72-485e-b666-4a4f0e136c82">
+          <ID>Age Count</ID>
+          <Name>Age Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d4aafe0e-9a61-4f84-9733-ec109cf9f559">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="2c1905ea-85dc-41a8-bd2a-42802640e9da">
+              <TableID>Fact_Age</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d26b3da0-87ff-42ed-95ce-f97228b639d4">
+          <CubeDimensionID>Economy</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4442f478-f81e-45da-ae1e-4e445de36ce8">
+              <AttributeID>SK Economy</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1b156aff-53fb-4448-8360-533195234564">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6626dcfb-b7af-45df-917a-ac120854b0a3">
+                    <TableID>Fact_Age</TableID>
+                    <ColumnID>SK_Economy</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c1060c8b-78ca-4859-9a5f-f1296dec633f">
+          <CubeDimensionID>Health</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f66ef9e2-8faa-41af-a751-eaf914d6fbb4">
+              <AttributeID>SK Health</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ecddf5b4-c986-46fe-be5f-a3ca8c903a43">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a860d3e6-3afe-43dd-9951-ea43868a0340">
+                    <TableID>Fact_Age</TableID>
+                    <ColumnID>SK_Health</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a9cde1fd-4c24-4ef9-9f49-2e38056a91b5">
+          <CubeDimensionID>Demographics</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7bc1414d-acaf-49b0-ac45-df6511198662">
+              <AttributeID>SK Demographics</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2cdda44e-c1c9-4a4e-a94e-4cb2b2381287">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="77344c16-c7a2-46e3-8ed2-f253c09fd85b">
+                    <TableID>Fact_Age</TableID>
+                    <ColumnID>SK_Demographics</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1b2018c9-fa58-41b1-b916-2a495f720627">
+          <CubeDimensionID>Fecha</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="95c29525-5975-464d-9bea-975bb1dea3d5">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c8e5b6f3-13a2-4433-b403-a8d13eb4b918">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5c24e608-770a-4dd8-8713-edc1e9492670">
+                    <TableID>Fact_Age</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e2f82f29-9f9c-4114-a6ee-929fb0acab94">
+          <CubeDimensionID>Geography</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3b8fc5f1-bc40-41d7-861e-e4e94e6bade9">
+              <AttributeID>SK Geography</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4d9db056-22aa-4de4-be0f-4c44b1280497">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9169f14b-27f9-42ca-bd2f-31d89661ead8">
+                    <TableID>Fact_Age</TableID>
+                    <ColumnID>SK_Geography</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="f283143a-0f41-42f6-b54e-dad09de4950f">
+    <DataSourceViewID>COVID GRUPO1 DWH</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="8f7e97ee-2407-4a4d-b509-d1403ab7447b">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE;           
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Casos Niños]
+ AS [Measures].[New Confirmed Age 00] + [Measures].[New Confirmed Age 01], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1;           
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Casos Adultos]
+ AS [Measures].[New Confirmed Age 01] + [Measures].[New Confirmed Age 02] + [Measures].[New Confirmed Age 03] + [Measures].[New Confirmed Age 04] + [Measures].[New Confirmed Age 05], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1;           
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Casos Ancianos]
+ AS [Measures].[New Confirmed Age 06] + [Measures].[New Confirmed Age 07] + [Measures].[New Confirmed Age 08] + [Measures].[New Confirmed Age 09], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1;           
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Casos Niños]
+ AS ([Measures].[New Confirmed Age 00] + [Measures].[New Confirmed Age 01]) / [Measures].[Age Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;           
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Casos Adultos]
+ AS ([Measures].[New Confirmed Age 01] + [Measures].[New Confirmed Age 02] + [Measures].[New Confirmed Age 03] + [Measures].[New Confirmed Age 04] + [Measures].[New Confirmed Age 05]) / [Measures].[Age Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;           
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Casos Ancianos]
+ AS ([Measures].[New Confirmed Age 06] + [Measures].[New Confirmed Age 07] + [Measures].[New Confirmed Age 08] + [Measures].[New Confirmed Age 09]) /[Measures].[Age Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;           
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total  Recuperados Niños]
+ AS [Measures].[New Recovered Age 00] + [Measures].[New Recovered Age 01], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1;           
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Recuperados Adultos]
+ AS [Measures].[New Recovered Age 01] + [Measures].[New Recovered Age 02] + [Measures].[New Recovered Age 03] + [Measures].[New Recovered Age 04] + [Measures].[New Recovered Age 05], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1;           
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Recuperados Ancianos]
+ AS [Measures].[New Recovered Age 06] + [Measures].[New Recovered Age 07] + [Measures].[New Recovered Age 08] + [Measures].[New Recovered Age 09], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1;           
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Recuperados Niños]
+ AS ([Measures].[New Recovered Age 00] + [Measures].[New Recovered Age 01]) /[Measures].[Age Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;           
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Recuperados Adultos]
+ AS ([Measures].[New Recovered Age 01] + [Measures].[New Recovered Age 02] + [Measures].[New Recovered Age 03] + [Measures].[New Recovered Age 04] + [Measures].[New Recovered Age 05]) /[Measures].[Age Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;           
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Recuperados Ancianos]
+ AS ([Measures].[New Recovered Age 06] + [Measures].[New Recovered Age 07] + [Measures].[New Recovered Age 08] + [Measures].[New Recovered Age 09]) /[Measures].[Age Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;           
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Fallecidos Niños]
+ AS [Measures].[New Deceased Age 00] + [Measures].[New Deceased Age 01], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1;           
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Fallecidos Adultos]
+ AS [Measures].[New Deceased Age 01] + [Measures].[New Deceased Age 02] + [Measures].[New Deceased Age 03] + [Measures].[New Deceased Age 04] + [Measures].[New Deceased Age 05], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1;           
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Fallecidos Ancianos]
+ AS [Measures].[New Deceased Age 06] + [Measures].[New Deceased Age 07] + [Measures].[New Deceased Age 08] + [Measures].[New Deceased Age 09], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1;           
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Fallecidos Niños]
+ AS ([Measures].[New Deceased Age 00] + [Measures].[New Deceased Age 01]) /[Measures].[Age Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;           
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Fallecidos Adultos]
+ AS ([Measures].[New Deceased Age 01] + [Measures].[New Deceased Age 02] + [Measures].[New Deceased Age 03] + [Measures].[New Deceased Age 04] + [Measures].[New Deceased Age 05]) /[Measures].[Age Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;           
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Fallecidos Ancianos]
+ AS ([Measures].[New Deceased Age 06] + [Measures].[New Deceased Age 07] + [Measures].[New Deceased Age 08] + [Measures].[New Deceased Age 09]) /[Measures].[Age Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <Kpis>
+    <Kpi dwd:design-time-name="1cfb4c6e-6b67-433f-a799-67f53dd38945">
+      <ID>KPI</ID>
+      <Name>KPI Porcentaje Infectados Niños</Name>
+      <Value>[Measures].[AVG Casos Niños]/100</Value>
+      <Status>CASE WHEN ISEMPTY ([Measures].[AVG Casos Niños]) THEN NULL
+     WHEN (KPIVALUE("KPI Porcentaje Infectados Niños")) &lt; 0.30 THEN ("Verde")
+     WHEN (KPIVALUE("KPI Porcentaje Infectados Niños")) &gt; 0.30 AND KPIVALUE("KPI Porcentaje Infectados Niños") &lt; 0.65 THEN("Amarillo")
+     WHEN (KPIVALUE("KPI Porcentaje Infectados Niños")) &gt; 0.65 AND KPIVALUE("KPI Porcentaje Infectados Niños") &lt; 0.80 THEN ("Naranja")
+    ELSE ("Rojo") END
+</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="6dc9dc5f-34a1-4b2f-be06-f79991e786af">
+      <ID>KPI 1</ID>
+      <Name>KPI Porcentaje Infectados Adultos</Name>
+      <Value>[Measures].[AVG Casos Adultos]/100</Value>
+      <Status>CASE WHEN ISEMPTY ([Measures].[AVG Casos Adultos]) THEN NULL
+     WHEN (KPIVALUE("KPI Porcentaje Infectados Adultos")) &lt; 0.30 THEN ("Verde")
+     WHEN (KPIVALUE("KPI Porcentaje Infectados Adultos")) &gt; 0.30 AND KPIVALUE("KPI Porcentaje Infectados Adultos") &lt; 0.65 THEN("Amarillo")
+     WHEN (KPIVALUE("KPI Porcentaje Infectados Adultos")) &gt; 0.65 AND KPIVALUE("KPI Porcentaje Infectados Adultos") &lt; 0.80 THEN ("Naranja")
+    ELSE ("Rojo") END
+</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="c800888f-d8ac-4388-944d-afc8c73815a2">
+      <ID>KPI 2</ID>
+      <Name>KPI Porcentaje Infectados Ancianos</Name>
+      <Value>[Measures].[AVG Casos Ancianos]/100</Value>
+      <Status>CASE WHEN ISEMPTY ([Measures].[AVG Casos Ancianos]) THEN NULL
+     WHEN (KPIVALUE("KPI Porcentaje Infectados Ancianos")) &lt; 0.30 THEN ("Verde")
+     WHEN (KPIVALUE("KPI Porcentaje Infectados Ancianos")) &gt; 0.30 AND KPIVALUE("KPI Porcentaje Infectados Ancianos") &lt; 0.65 THEN("Amarillo")
+     WHEN (KPIVALUE("KPI Porcentaje Infectados Ancianos")) &gt; 0.65 AND KPIVALUE("KPI Porcentaje Infectados Ancianos") &lt; 0.80 THEN ("Naranja")
+    ELSE ("Rojo") END
+</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="d058610d-7733-4cf9-9ea8-5ef8e92ecb2c">
+      <ID>KPI 3</ID>
+      <Name>KPI Porcentaje Fallecida Niños</Name>
+      <Value>[Measures].[AVG Fallecidos Niños]/100</Value>
+      <Status>CASE WHEN ISEMPTY ([Measures].[AVG Fallecidos Niños]) THEN NULL
+    
+    ELSE KPIVALUE("KPI Porcentaje Fallecida Niños") END
+</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="59092e49-229d-4397-a172-22a9243b2469">
+      <ID>KPI 4</ID>
+      <Name>KPI Porcentaje Fallecida Adultos</Name>
+      <Value>[Measures].[AVG Fallecidos Adultos]/100</Value>
+      <Status>CASE WHEN ISEMPTY ([Measures].[AVG Fallecidos Adultos]) THEN NULL
+    
+    ELSE KPIVALUE("KPI Porcentaje Fallecida Adultos") END
+</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="74168a8a-56da-4d7a-966d-393b034905de">
+      <ID>KPI 5</ID>
+      <Name>KPI Porcentaje Fallecida Ancianos</Name>
+      <Value>[Measures].[AVG Fallecidos Ancianos]/100</Value>
+      <Status>CASE WHEN ISEMPTY ([Measures].[AVG Fallecidos Ancianos]) THEN NULL
+    
+    ELSE KPIVALUE("KPI Porcentaje Fallecida Ancianos") END
+</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="82e8aba2-f247-4f8a-8e65-3bba059386e7">
+      <ID>KPI 6</ID>
+      <Name>KPI Recuperados Niños</Name>
+      <Value>[Measures].[AVG Recuperados Niños]/100</Value>
+      <Goal>0.80</Goal>
+      <Status>CASE WHEN ISEMPTY ([Measures].[AVG Recuperados Niños]) THEN NULL
+     WHEN (KPIVALUE("KPI Recuperados Niños") &gt;= KPIGOAL("KPI Recuperados Niños")) THEN 1
+     WHEN (KPIVALUE("KPI Recuperados Niños") &lt; KPIGOAL("KPI Recuperados Niños")) THEN 0
+    ELSE -1 END
+</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="b3b11105-4afa-4243-a27b-c31ebaeda6f9">
+      <ID>KPI 7</ID>
+      <Name>KPI Recuperados Adultos</Name>
+      <Value>[Measures].[AVG Recuperados Adultos]/100</Value>
+      <Goal>0.80</Goal>
+      <Status>CASE WHEN ISEMPTY ([Measures].[AVG Recuperados Adultos]) THEN NULL
+     WHEN (KPIVALUE("KPI Recuperados Adultos") &gt;= KPIGOAL("KPI Recuperados Adultos")) THEN 1
+     WHEN (KPIVALUE("KPI Recuperados Adultos") &lt; KPIGOAL("KPI Recuperados Adultos")) THEN 0
+    ELSE -1 END</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="de4f0611-acb4-48b4-a57e-234bc9be4430">
+      <ID>KPI 8</ID>
+      <Name>KPI Recuperados Ancianos</Name>
+      <Value>[Measures].[AVG Recuperados Ancianos]/100</Value>
+      <Goal>0.80</Goal>
+      <Status>CASE WHEN ISEMPTY ([Measures].[AVG Recuperados Ancianos]) THEN NULL
+     WHEN (KPIVALUE("KPI Recuperados Ancianos") &gt;= KPIGOAL("KPI Recuperados Ancianos")) THEN 1
+     WHEN (KPIVALUE("KPI Recuperados Ancianos") &lt; KPIGOAL("KPI Recuperados Ancianos")) THEN 0
+    ELSE -1 END</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+  </Kpis>
+</Cube>

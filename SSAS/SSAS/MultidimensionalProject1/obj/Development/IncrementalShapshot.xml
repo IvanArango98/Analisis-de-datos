@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>GRUPO1</Database>
+    <Server>40.117.179.53</Server>
+    <ConnectionString>Data Source=40.117.179.53;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>Q+7BSdppFFKU3rBwsoR4zbxRwys=11/7/2020 10:24:06 PM11/6/2020 10:44:57 PM</TimeStamp>
+        <ID>
+          <String>COVID GRUPO1 DWH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>dEDZA7HPkyhrECAixj+RlNB3q/c=11/6/2020 10:46:00 PM11/6/2020 10:45:59 PM</TimeStamp>
+        <ID>
+          <String>COVID GRUPO1 DWH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>c/0LHIPWfTIHovDWafx8EbN8C6s=11/6/2020 10:57:08 PM11/6/2020 10:54:23 PM</TimeStamp>
+        <ID>
+          <String>Fecha</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>x/wTNlsDAgFBsnsA3oYe5fYzeiQ=11/6/2020 11:03:11 PM11/6/2020 10:57:25 PM</TimeStamp>
+        <ID>
+          <String>Health</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>e3uG2wzk9fIJbRFOUvgZVnZL5Bw=11/6/2020 11:02:51 PM11/6/2020 10:57:25 PM</TimeStamp>
+        <ID>
+          <String>Demographics</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xmm+LUv/WpwuttXJpeqcFzAYXpo=11/6/2020 11:01:54 PM11/6/2020 10:57:25 PM</TimeStamp>
+        <ID>
+          <String>Economy</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>onmgwwxc3/qoT9FVHi44pd18VwA=11/7/2020 7:29:34 PM11/6/2020 10:46:29 PM</TimeStamp>
+        <ID>
+          <String>Geography</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>g3dVmz0+JVbGoOWG2yKj8jr0KgY=11/7/2020 7:29:34 PM11/6/2020 10:57:25 PM+Nj0WRYmGRam7dsTAN4a4RZBgSw=11/6/2020 10:57:25 PM11/6/2020 10:57:25 PM</TimeStamp>
+        <ID>
+          <String>COVID GRUPO1 DWH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>+ELCOLOBM9OVp1N2Bsy5wciYmcM=11/7/2020 7:38:27 PM11/6/2020 11:03:43 PM+6oHbnAlj9VeInacrNUaj3UzIHE=11/6/2020 11:03:43 PM11/6/2020 11:03:43 PM</TimeStamp>
+        <ID>
+          <String>COVID GRUPO1 DWH 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>lsR+tAbY+DczeX3nA0xVUdMJj20=11/7/2020 11:28:07 PM11/6/2020 11:07:52 PM4+FGklZbPrSuccrtDYttasPQZYA=11/6/2020 11:07:52 PM11/6/2020 11:07:52 PM</TimeStamp>
+        <ID>
+          <String>COVID GRUPO1 DWH - Age</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>tzbMwK0z3q0KDfI2Yq5Gh44Mc88=11/6/2020 1:22:25 AM11/6/2020 1:22:25 AM</TimeStamp>
+      <ID>
+        <String>GRUPO1</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-11-08T05:28:17.6Z</LastDeployed>
+</DeploymentSnapshot>

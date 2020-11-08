@@ -1,0 +1,39 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>COVID DWH GRUPO1</Id>
+            <Name>COVID DWH GRUPO1</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsDFppcY1BkaCBhHOQrhGcwAAAAAiAAAAQwBPAFYASQBEACAARABXAEgAIABHAFIAVQBQAE8AMQAAABBmAAAAAQAAIAAAANyV1snrJhA1MjoDcy1liq7ioHA4aOG+F0dn1bbX2ffIAAAAAA6AAAAAAgAAIAAAAE1KxSYFwIMNgJRjun8csREmTP5nFyDT1g0SjptqeZ+OEAAAAC8+T0g63AGgNXvOOP4Hw/BAAAAA/AbHIF3JG6J5QuPPCmcLwcXrG14Ow9yNEDwY/0YXqELNrrmkyJv/RVr7bNpOsvL7duPPlV3P9sQ8IZDw0+XLCg==</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>COVID GRUPO1 DWH</Id>
+            <Name>COVID GRUPO1 DWH</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsDFppcY1BkaCBhHOQrhGcwAAAAAiAAAAQwBPAFYASQBEACAARwBSAFUAUABPADEAIABEAFcASAAAABBmAAAAAQAAIAAAAIh4VAxatkmQ4KLUs/L0hcRpTKx12XZSQ8X46YerZVShAAAAAA6AAAAAAgAAIAAAAMXeoYCnv7vuOr2Uf6GgG5q5Y9y9SDYLWNm1GZNRoJ0vEAAAAI/yIANXmVk6G7YD0FyyPudAAAAAzsdVgsBqdfKnY/ZWYkFkij+LjVYWvWrUSe/9KtGRDHnCfn7b8HikBuhHOFSuxzT2aomh/e4IfbTKWKwDhWXQaA==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>COVID DWH GRUPO1</Id>
+            <Name>COVID DWH GRUPO1</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsDFppcY1BkaCBhHOQrhGcwAAAAAiAAAAQwBPAFYASQBEACAARABXAEgAIABHAFIAVQBQAE8AMQAAABBmAAAAAQAAIAAAADznZYqps+SvKjARhGy4fvNgzEyJ1Qac5VYA2bebdIYdAAAAAA6AAAAAAgAAIAAAAMOOo+aeOG6AMQXKboSlPWPUWoCpKOBNRPNBQkjIaQJIIAAAAJPQwOHkvMKI1he97zeHUw8nL1k/Tb+/o6/0P5L9c7v+QAAAADMHdXInt95M2MbxMdVdu3LrtODlZ+op7neXAheK3NTDlJgcvfidlNnh0qTpZM5d6Ww4DEQYYoVGuODLrFfbxdk=</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>COVID GRUPO1 DWH</Id>
+            <Name>COVID GRUPO1 DWH</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAsDFppcY1BkaCBhHOQrhGcwAAAAAiAAAAQwBPAFYASQBEACAARwBSAFUAUABPADEAIABEAFcASAAAABBmAAAAAQAAIAAAAPQDAiGFgIfYBRrfriZ9Khr27yEHGqKKXjeuKo2KwjUVAAAAAA6AAAAAAgAAIAAAANYGpdWgiqCiFSuh/9bBQFXoqBJvT1RdlSOccbhzzTz4IAAAAEFPOtuKTrSUk1fFBt5QP4PwSZw9G/syNEsJKGzXnercQAAAAAoQVpZmgQa7QKH76L2oZj4mmJsyH9M66ccvVY1SGKM6Mdlk7rxCWcl3M9tI034KF5JqQa4Sakurx5euZwaeyOw=</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>40.117.179.53</TargetServer>
+        <TargetDatabase>GRUPO1</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

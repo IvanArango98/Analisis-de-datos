@@ -1,0 +1,244 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2069d7a1-863e-439c-8a98-52564d9b794a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Economy</ID>
+  <Name>Economy</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3142" scrolltop="-8202" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10186" y="21405" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Economy" left="-6" top="-1958" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3863" height="6984" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000170f0000481b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Economy" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3142</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8202</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-6</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-1958</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="155">
+            <Shape Id="SK Economy" Expanded="false">
+              <Attributes>
+                <Attribute Id="SK Economy" />
+                <Attribute Id="Human Capital Index" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Gdp" Expanded="false">
+              <Attributes>
+                <Attribute Id="Gdp" />
+              </Attributes>
+              <Position x="218" y="20" />
+            </Shape>
+            <Shape Id="Gdp Per Capita" Expanded="false">
+              <Attributes>
+                <Attribute Id="Gdp Per Capita" />
+              </Attributes>
+              <Position x="417" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="26fc340a-ec1e-4805-ab75-38b5a1f811ca">
+    <DataSourceViewID>COVID GRUPO1 DWH</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="dc6ac6a0-d898-47d2-8b35-2b2046a7c45c">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="9dee572c-9180-4843-b155-6b104e01aa98">
+      <ID>SK Economy</ID>
+      <Name>SK Economy</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="731b2494-15b7-471a-bcd2-5c1823f0a99b">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7523b9ad-5eaa-4184-83be-4e9a9b8dcf18">
+            <TableID>Dimension_Economy</TableID>
+            <ColumnID>SK_Economy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2560d145-613c-481e-8756-226c44cdd613">
+          <AttributeID>Gdp</AttributeID>
+          <Name>Gdp</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8ad9fc9c-9257-44b8-a993-996db134c17e">
+          <AttributeID>Human Capital Index</AttributeID>
+          <Name>Human Capital Index</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a85f8392-d083-4f52-99dc-14afd4d6544e">
+      <ID>Gdp</ID>
+      <Name>Gdp</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="73337d9b-2264-459a-b9f6-6985a6afb93a">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6fc46744-83fa-4a85-ba3c-41909e3cc85d">
+            <TableID>Dimension_Economy</TableID>
+            <ColumnID>Gdp</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a9bca382-421a-4702-938e-edca6257b07f">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f888e68e-df26-4286-8570-59cd89e09aed">
+            <TableID>Dimension_Economy</TableID>
+            <ColumnID>gdp_per_capita</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="af5c5554-c60c-4189-a189-3246e99daa10">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="dc055125-2438-4ef3-838d-c6e38ce0a82c">
+          <TableID>Dimension_Economy</TableID>
+          <ColumnID>Gdp</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="ffd8bd30-a689-4c83-942b-9754d59a7e4d">
+          <AttributeID>Gdp Per Capita</AttributeID>
+          <Name>Gdp Per Capita</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="1fedb80c-28dd-49a8-9ab4-82eb3f8e71ae">
+        <DataType>BigInt</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f24de77a-63d8-4874-a90c-79838f7a209d">
+          <TableID>Dimension_Economy</TableID>
+          <ColumnID>Gdp</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="772d1141-f500-4580-9444-a332edef004c">
+      <ID>Gdp Per Capita</ID>
+      <Name>Gdp Per Capita</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f345eb54-880f-4c3d-9567-d8ba71c8aedd">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db4ad7a2-f80b-4c37-a70e-6d7dbb159126">
+            <TableID>Dimension_Economy</TableID>
+            <ColumnID>gdp_per_capita</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b309ac20-148c-4b41-a18a-e27791a544e9">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="798a41f9-48c0-48c3-9a00-9083c69e3158">
+          <TableID>Dimension_Economy</TableID>
+          <ColumnID>gdp_per_capita</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="fca48916-0c4c-4537-a8d4-1aebc0f57dd6">
+        <DataType>BigInt</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3a0aabe3-ce8a-4d7b-9f00-ac80ff6bf9cd">
+          <TableID>Dimension_Economy</TableID>
+          <ColumnID>gdp_per_capita</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3addddcb-d311-450e-83c3-64378552ccc9">
+      <ID>Human Capital Index</ID>
+      <Name>Human Capital Index</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9b76c811-bba6-4ac8-9a8d-e40e85a21fd3">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a22dc750-7485-4c76-845d-1ced30eb8540">
+            <TableID>Dimension_Economy</TableID>
+            <ColumnID>human_capital_index</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="318a5a93-5817-4c4f-8618-2c1e33b87e22">
+      <ID>Hierarchy</ID>
+      <Name>Gdp-GdpPerCapita</Name>
+      <Levels>
+        <Level dwd:design-time-name="3d391efb-2640-4b7c-9b84-cdc2fedaf704">
+          <ID>Gdp</ID>
+          <Name>Gdp</Name>
+          <SourceAttributeID>Gdp</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c75053f7-2b97-4266-b5a8-155d33be3f0b">
+          <ID>Gdp Per Capita</ID>
+          <Name>Gdp Per Capita</Name>
+          <SourceAttributeID>Gdp Per Capita</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

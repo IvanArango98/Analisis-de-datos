@@ -1,0 +1,364 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cdec7f94-b903-462f-82a0-039da62af28c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Health</ID>
+  <Name>Health</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2282" scrolltop="-8202" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10186" y="21405" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Health" left="-218" top="-4524" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5583" height="11086" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000cf1500004e2b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Health" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2282</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8202</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-218</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-4524</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="ec14938d-df83-467c-9334-7e1868c630be">
+    <DataSourceViewID>COVID GRUPO1 DWH</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="9f17ffac-2ed6-4fe5-bc88-48de33073c5b">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0efd6088-57ba-4623-b2cf-09de7aab520a">
+      <ID>SK Health</ID>
+      <Name>SK Health</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="da4fb0ce-62d9-43b1-b160-0967c5889942">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f4525d7-c450-4643-a6cc-dd5710293450">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>SK_Health</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="87ee39a8-1dc8-422e-9c2a-92538d7d6081">
+          <AttributeID>Life Expectancy</AttributeID>
+          <Name>Life Expectancy</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6accaf51-8cc6-4b3e-94a8-1a66243e7484">
+          <AttributeID>Smoking Prevalence</AttributeID>
+          <Name>Smoking Prevalence</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6b0a30c6-01cd-451a-95b8-2e869026c873">
+          <AttributeID>Diabetes Prevalence</AttributeID>
+          <Name>Diabetes Prevalence</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9aa48e66-a2b8-4c29-9fd1-5cf551546508">
+          <AttributeID>Infant Mortality Rate</AttributeID>
+          <Name>Infant Mortality Rate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b3c8a871-fbe1-4ad4-979f-2e2f9ddc9e1c">
+          <AttributeID>Adult Male Mortality Rate</AttributeID>
+          <Name>Adult Male Mortality Rate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e5da9019-07bf-477b-8034-4bf38499dc80">
+          <AttributeID>Adult Female Mortality Rate</AttributeID>
+          <Name>Adult Female Mortality Rate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2d7322f0-ce52-4221-88ab-ea5ab98f0c53">
+          <AttributeID>Pollution Mortality Rate</AttributeID>
+          <Name>Pollution Mortality Rate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4b210e26-b86d-4ce3-9619-04c6ae291953">
+          <AttributeID>Comorbidity Mortality Rate</AttributeID>
+          <Name>Comorbidity Mortality Rate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="90832306-c058-4632-b772-55060e4cc4b0">
+          <AttributeID>Hospital Beds</AttributeID>
+          <Name>Hospital Beds</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="28534e1a-9317-4b40-8e06-0e98cab4b8f8">
+          <AttributeID>Nurses</AttributeID>
+          <Name>Nurses</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="efc9d421-86bb-4968-9de2-650fcaf1dd1d">
+          <AttributeID>Physicians</AttributeID>
+          <Name>Physicians</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f24eb060-0837-420a-a334-5ed86c707298">
+          <AttributeID>Health Expenditure</AttributeID>
+          <Name>Health Expenditure</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5435c459-c594-40fb-8d53-b1e9d8842ef5">
+          <AttributeID>Out Of Pocket Health Expenditure</AttributeID>
+          <Name>Out Of Pocket Health Expenditure</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="df037c64-5778-4e43-be9a-dd937a8883c4">
+      <ID>Life Expectancy</ID>
+      <Name>Life Expectancy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5ec5bc9d-14d7-4044-a17c-a800225c1187">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3cec5af2-ba63-4820-9562-e9518142dbe4">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>life_expectancy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0ef7b011-766f-4925-9e4b-c2b232502756">
+      <ID>Smoking Prevalence</ID>
+      <Name>Smoking Prevalence</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2ba320aa-ce69-4815-ad3c-a39955d2e5f9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a627e21b-2c24-429f-bf7e-7686fe27ea15">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>smoking_prevalence</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1aee7f17-f93a-47b7-a107-2cac5a7e56b0">
+      <ID>Diabetes Prevalence</ID>
+      <Name>Diabetes Prevalence</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e8041930-c2be-45c6-a2a8-a2898515a538">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="56fed30e-cfe0-4a4b-b307-56955cf4153a">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>diabetes_prevalence</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a9c00bc3-e175-40ff-a83f-309e0474882a">
+      <ID>Infant Mortality Rate</ID>
+      <Name>Infant Mortality Rate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7c02cd0-f1ac-4f24-9a48-dde614f56bce">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="30e38147-7732-45da-a79c-37d649c626f6">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>infant_mortality_rate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="db4ff975-f4ab-4174-baf4-f7a2e4289531">
+      <ID>Adult Male Mortality Rate</ID>
+      <Name>Adult Male Mortality Rate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2e61de22-7d7f-4876-be77-440570949089">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4c501900-0d96-453c-9d1f-0e5bdac96de2">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>adult_male_mortality_rate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="50745838-ba66-4a6d-8bac-470ff6315715">
+      <ID>Adult Female Mortality Rate</ID>
+      <Name>Adult Female Mortality Rate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4ef79349-4007-418b-8558-eb15bf14ad03">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b02766d-692f-447c-bd80-bc575cb90b58">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>adult_female_mortality_rate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c8f8e264-acfd-4afc-82a4-62319d9c2e1d">
+      <ID>Pollution Mortality Rate</ID>
+      <Name>Pollution Mortality Rate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="14dec48e-0298-4608-a1df-b7572cb4ced2">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a9dad37b-4a5a-4d81-b729-9f9be5efddfb">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>pollution_mortality_rate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f7003c83-4764-4446-820c-0b892e931a4b">
+      <ID>Comorbidity Mortality Rate</ID>
+      <Name>Comorbidity Mortality Rate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="51cf5331-6988-4da9-83e7-8d83b4f42344">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eb8f9616-f7b0-4e42-a1a8-20edc7ec095f">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>comorbidity_mortality_rate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c0849509-1652-4bb0-94d7-87c316f2305d">
+      <ID>Hospital Beds</ID>
+      <Name>Hospital Beds</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="51e590ef-abee-48ea-83f7-866b3abec91d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="abef558f-9e6d-44c1-826b-3a0d0bd695ea">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>hospital_beds</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="497197ed-d29f-4a7f-a1b4-fda421c6d898">
+      <ID>Nurses</ID>
+      <Name>Nurses</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d578c7eb-a15b-4400-868d-c7893533c865">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="125be115-8d4f-4199-80f2-90eb6f40b522">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>nurses</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8a28740a-fd09-4b90-acf9-c0b708d31712">
+      <ID>Physicians</ID>
+      <Name>Physicians</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="699cec1f-54f5-4247-9be5-57983acfa440">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0db296b-fa9b-451f-ad68-2ea6d00bfc33">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>physicians</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="291ae580-2f98-4c92-8ac7-094b44be28a8">
+      <ID>Health Expenditure</ID>
+      <Name>Health Expenditure</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="58af67b8-ac94-4a36-93a3-c02b230c1930">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3df739e9-9e33-4d03-b17a-e6c87e02e797">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>health_expenditure</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="51a25b85-8c6a-400a-8249-efd98e46e7bc">
+      <ID>Out Of Pocket Health Expenditure</ID>
+      <Name>Out Of Pocket Health Expenditure</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3fa12ed4-8c17-45bd-ac7e-eccb3c31dfc7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6f7524b2-8446-440d-a4cd-745ffbc9d92e">
+            <TableID>Dimension_Health</TableID>
+            <ColumnID>out_of_pocket_health_expenditure</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

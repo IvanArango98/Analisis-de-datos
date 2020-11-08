@@ -1,0 +1,861 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="14125825-1ca6-41ae-ba6a-672b68aee63c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>COVID GRUPO1 DWH</ID>
+  <Name>COVID GRUPO1 DWH - Epidemiology</Name>
+  <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="24" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5557" scrolltop="-577" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="28840" y="21405" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Geography" left="13499" top="7400" logicalid="12" controlid="1" masterid="0" hint1="0" hint2="0" width="3757" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ad0e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Geography" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Demographics" left="6548" top="0" logicalid="13" controlid="2" masterid="0" hint1="0" hint2="0" width="5027" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000a313000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Demographics" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Epidemilogy" left="7024" top="7400" logicalid="14" controlid="3" masterid="0" hint1="0" hint2="0" width="4075" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000eb0f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Fact_Epidemilogy" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Health" left="3139" top="14800" logicalid="15" controlid="4" masterid="0" hint1="0" hint2="0" width="5583" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000cf15000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Health" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Economy" left="11122" top="14800" logicalid="16" controlid="5" masterid="0" hint1="0" hint2="0" width="3863" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000170f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Economy" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Fecha" left="20" top="7400" logicalid="17" controlid="6" masterid="0" hint1="0" hint2="0" width="4604" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fc11000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Dimension_Fecha" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="10799" top="9501" logicalid="18" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Epidemilo__SK_Ge__7C1A6C5A]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="22" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13499" y="9900" />
+              <point x="11099" y="9900" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8662" top="4501" logicalid="19" controlid="8" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Epidemilo__SK_De__7A3223E8]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="9" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9061" y="5000" />
+              <point x="9061" y="7400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="5531" top="12100" logicalid="20" controlid="9" masterid="0" hint1="0" hint2="0" width="2730" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Epidemilo__SK_He__7D0E9093]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="8" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5930" y="14800" />
+              <point x="5930" y="13600" />
+              <point x="7961" y="13600" />
+              <point x="7961" y="12400" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4324" top="9501" logicalid="21" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Epidemilo__DateK__7E02B4CC]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="27" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4624" y="9900" />
+              <point x="7024" y="9900" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9311" top="12100" logicalid="22" controlid="11" masterid="0" hint1="0" hint2="0" width="4142" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Epidemilo__SK_Ec__7B264821]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="3" sourceattachpoint="6" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="13053" y="14800" />
+              <point x="13053" y="13600" />
+              <point x="9611" y="13600" />
+              <point x="9611" y="12400" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5557</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-577</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="a78b28c8-d6cb-47a2-bde1-15c58df6c3b7">
+      <ID>Health</ID>
+      <Name>Health</Name>
+      <DimensionID>Health</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f3e85635-8da5-40f2-9af1-44a89769eb5d">
+          <AttributeID>SK Health</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ffc8503-3d81-4ea2-b55c-b550cb671895">
+          <AttributeID>Life Expectancy</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="981b8f6c-702f-4744-b9de-31c856ff2051">
+          <AttributeID>Smoking Prevalence</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c1e2f985-0e91-406b-8991-10561acb4505">
+          <AttributeID>Diabetes Prevalence</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a783936f-aeb3-4693-9a54-a3f4fd766de8">
+          <AttributeID>Infant Mortality Rate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2efbffb5-f418-4d31-a7c7-5bdbfd4b7f5e">
+          <AttributeID>Adult Male Mortality Rate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d84ac8d6-9076-4739-b11e-245331368f8e">
+          <AttributeID>Adult Female Mortality Rate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ad483e89-cdf8-40eb-b2fd-9a164161c3bc">
+          <AttributeID>Pollution Mortality Rate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b70dc9a0-a4d7-4cd4-a2c4-2a1dc55034be">
+          <AttributeID>Comorbidity Mortality Rate</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="118aa9e4-7042-41fb-a88c-a668de30fb03">
+          <AttributeID>Hospital Beds</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ab8ca4bb-bf0d-44ca-94f5-35b7b5882200">
+          <AttributeID>Nurses</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6da97056-aa7f-44ea-949b-b3065f6eacd9">
+          <AttributeID>Physicians</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a85809da-4f52-4d65-a5db-7543e937f710">
+          <AttributeID>Health Expenditure</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ec84b6f5-ba65-445b-a3c9-2c18cf291d98">
+          <AttributeID>Out Of Pocket Health Expenditure</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="80297cf0-2678-45c6-8f3b-afc6fc63627f">
+      <ID>Demographics</ID>
+      <Name>Demographics</Name>
+      <DimensionID>Demographics</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c1f767a3-a581-44cb-9877-b35a2bf58333">
+          <AttributeID>SK Demographics</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a94f0f0-602a-4d60-ae29-e2b004af53eb">
+          <AttributeID>Population</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6128ff10-4a13-405c-adad-80913359a927">
+          <AttributeID>Population Male</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="72ed0d91-3118-4030-939b-b1cc3368858f">
+          <AttributeID>Population Female</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="51aaafb9-fcf8-4a45-8d2b-155fc3f980ca">
+          <AttributeID>Rural Population</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="976f0808-99f1-45f6-b943-a4f4f505395d">
+          <AttributeID>Urban Population</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ca83abbc-3570-4e66-841e-da7062889350">
+          <AttributeID>Largest City Population</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dc1463d5-1d30-44cf-a1a5-b76885050241">
+          <AttributeID>Clustered Population</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8cba45a8-9904-4a04-81bd-2814d839add5">
+          <AttributeID>Population Density</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9dbcf49a-8def-48f2-9602-9dc5e18a5861">
+          <AttributeID>Human Development Index</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5f834ed1-04e6-43ef-9d5f-a59d86be0aea">
+          <AttributeID>Population Age 00 09</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="383c30c3-2e57-4528-b380-9bec5bade007">
+          <AttributeID>Population Age 10 19</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="801f0ebc-8bd3-4636-92b8-8c4d0aaf84b6">
+          <AttributeID>Population Age 20 29</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0454b979-6f4a-4f77-a4fb-e64869818817">
+          <AttributeID>Population Age 30 39</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="857a7406-98ab-46df-98f7-a78661ab17d8">
+          <AttributeID>Population Age 40 49</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="eb1abb93-fab7-4748-a11f-ef2ff05d782e">
+          <AttributeID>Population Age 50 59</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="30a15a83-8b4a-4b07-a571-b8e91ee465f6">
+          <AttributeID>Population Age 60 69</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe8bdfd2-0ad4-49f9-a1aa-5d0d0829f2ea">
+          <AttributeID>Population Age 70 79</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d017cc9f-7618-4f8f-8dee-ca4c4fa2c5ca">
+          <AttributeID>Population Age 80 89</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ad6b96d5-ae43-4314-9966-31aaf3c0684d">
+          <AttributeID>Population Age 90 99</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b337c094-f30a-4a0d-b4c6-94f378c28c00">
+          <AttributeID>Population Age 80 And Older</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1baa7030-6114-4741-b216-26183fef5d52">
+      <ID>Fecha</ID>
+      <Name>Fecha</Name>
+      <DimensionID>Fecha</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1c0df848-a198-4b19-b23f-31617ee4f8d6">
+          <AttributeID>Date Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7cb78bdc-c684-46d7-9b48-f76375d07e9a">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="de9bb52b-f7ed-4dca-be61-c9684988c383">
+          <AttributeID>Month Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e646ca12-8895-4228-b71f-144801607ae1">
+          <AttributeID>Quarter</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="882ef6d9-9cba-4fda-abd0-684880061af8">
+          <AttributeID>Quarter Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3b10bae4-0200-45dd-81e8-3b7041b3dd0b">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="c54d770f-2336-4280-ad28-0dfcf19d39c6">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="c96c0633-e3ef-4ece-b3b3-26fbde9ba6db">
+      <ID>Economy</ID>
+      <Name>Economy</Name>
+      <DimensionID>Economy</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3a2f6f9f-9fb2-468e-9aa6-d68e890715ca">
+          <AttributeID>SK Economy</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="646bba09-ee8b-489d-a430-ec1ac3ea5388">
+          <AttributeID>Gdp</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="037e1577-643e-4109-9d62-378993f1e3ad">
+          <AttributeID>Gdp Per Capita</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="250bb086-c35e-4643-a14e-7758e0d1efe2">
+          <AttributeID>Human Capital Index</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="cbd9b0d6-c7bf-4ef8-a9d8-e2ba2d10c461">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="0fe3d55c-20b6-47d2-976e-bb6c4a8645b6">
+      <ID>Geography</ID>
+      <Name>Geography</Name>
+      <DimensionID>Geography</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="450bd2a5-4467-4278-898b-56d18e762a5b">
+          <AttributeID>SK Geography</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4964eb8b-dd43-48f3-b5b2-f3bae10b8935">
+          <AttributeID>Latitude</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="944aaf3a-7d6b-47d6-8c7b-378a118c69b6">
+          <AttributeID>Longitude</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7ff10cac-d16c-4234-bc0f-0fb6df4b2b25">
+          <AttributeID>Elevation</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c0435409-c5d3-443e-9d75-b4a68a0f6be1">
+          <AttributeID>Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9decf47c-937b-487d-89d4-0154577ceb05">
+          <AttributeID>Rural Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8ae19a94-2ca4-4df8-bd73-10dd6974e531">
+          <AttributeID>Urban Area</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5bf0aae9-a73e-4192-a9e5-453861dd127c">
+          <AttributeID>Open Street Maps</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c1c088cf-9f16-42da-a5cd-43245adc3478">
+          <AttributeID>Country Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="09fc9387-722e-43a7-91e4-8ece60bc83a5">
+          <AttributeID>Country Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d014f482-db37-459e-834e-1bf1b3075cd4">
+          <AttributeID>Subregion1 Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c547ab66-6738-49d3-b69d-f6e9e9f4ee21">
+          <AttributeID>Subregion1 Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="73a7d021-1683-498c-87ed-361ce043872d">
+          <AttributeID>Subregion2 Code</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="99a3ce28-242a-46b5-a147-68ee95da0984">
+          <AttributeID>Subregion2 Name</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="74bb81bb-9d7e-456f-b7f5-c8cc338c7a35">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="af60c419-ed79-4c49-9eee-02b239e035eb">
+      <ID>Epidemilogy</ID>
+      <Name>Epidemilogy</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T06:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="d2a29a4f-fac7-4d6c-899b-841b62382a8d">
+          <ID>New Confirmed</ID>
+          <Name>New Confirmed</Name>
+          <Source dwd:design-time-name="ea8acdeb-4924-42ea-bb0a-91d519860f00">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="06dc16d3-2a62-46fa-a949-293f9d2f25e4">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>new_confirmed</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a5127a3a-14e4-4f04-9f94-a184d44b1187">
+          <ID>New Deceased</ID>
+          <Name>New Deceased</Name>
+          <Source dwd:design-time-name="e0df0429-26fe-438c-973e-fc56b4c7ef4d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="177b982d-5172-4de7-9d22-2f17fdb11568">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>new_deceased</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="cc3f27b4-5fad-45f8-af55-4cec9687139c">
+          <ID>New Recovered</ID>
+          <Name>New Recovered</Name>
+          <Source dwd:design-time-name="5e7f6cb7-0469-4f9a-a811-6b7b1f3de491">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cc2326b9-dbac-4500-abb1-6d5ad306737b">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>new_recovered</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="da2bf44f-534a-4a43-9402-99b082d0af01">
+          <ID>New Tested</ID>
+          <Name>New Tested</Name>
+          <Source dwd:design-time-name="3ca3d223-599e-4c22-8be9-2a11e86b81ac">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cea8e527-7b13-413d-9f75-8b01b250fac8">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>new_tested</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f622601d-0592-474a-9061-4e89d0359822">
+          <ID>Total Confirmed</ID>
+          <Name>Total Confirmed</Name>
+          <Source dwd:design-time-name="1913cf37-907c-41d1-a272-2a54d5c1f548">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d06cc244-6b9d-4cf3-8d22-cd5b00d26f93">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>total_confirmed</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7464af18-d4f5-4288-bd7e-6451ac26a867">
+          <ID>Total Deceased</ID>
+          <Name>Total Deceased</Name>
+          <Source dwd:design-time-name="5a919182-6e63-43fd-be4f-36940f1e7a22">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="18eaded1-c901-4fae-bfe3-dd0dd03f6ec6">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>total_deceased</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="403c34a5-ee14-4a91-8fb4-149504739a09">
+          <ID>Total Tested</ID>
+          <Name>Total Tested</Name>
+          <Source dwd:design-time-name="6eab32ee-b31c-4d21-a1a8-923d4ee1a740">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c5fb613b-978e-44c3-8de5-4ea44847cc76">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>total_tested</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3bc8aa45-7c25-455f-a1db-f5f0f551648e">
+          <ID>New Hospitalized</ID>
+          <Name>New Hospitalized</Name>
+          <Source dwd:design-time-name="85c99fc6-9b6e-4b8b-88c9-3ebbc378fc5f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9385b4b0-6b29-49c6-8c4d-c3c5410fbd30">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>new_hospitalized</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="81e9819c-5419-4abb-b233-81400ec9690d">
+          <ID>New Intensive Care</ID>
+          <Name>New Intensive Care</Name>
+          <Source dwd:design-time-name="27223b0a-1123-439f-81bc-f7095f7235c9">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0b7d2f8e-7172-44c1-8dc6-92463dfda267">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>new_intensive_care</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4f0078e2-ed89-4d5e-8677-31173794ddb7">
+          <ID>New Ventilator</ID>
+          <Name>New Ventilator</Name>
+          <Source dwd:design-time-name="b4e1a232-d212-49e7-8a9c-bdc6aa11123f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="204088ca-37ee-46db-8eb6-7f87ce3d4dcb">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>new_ventilator</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b5366d61-9303-4fe5-a29a-d247d644f7d4">
+          <ID>Total Hospitalized</ID>
+          <Name>Total Hospitalized</Name>
+          <Source dwd:design-time-name="4e699280-2066-47e0-896f-2a1f77527503">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="31960e60-5073-49be-932c-a4881c1e79be">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>total_hospitalized</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="71057874-5ab6-4a55-ba21-0b949a05e566">
+          <ID>Total Intensive Care</ID>
+          <Name>Total Intensive Care</Name>
+          <Source dwd:design-time-name="6b226260-cb8d-4156-9426-3377c5326b13">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f8a26cdd-683f-4fda-a243-3aba7b1ca989">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>total_intensive_care</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c5598f04-a9de-4f6c-94a4-46c1c008349d">
+          <ID>Total Ventilator</ID>
+          <Name>Total Ventilator</Name>
+          <Source dwd:design-time-name="9414b6e5-121b-4a50-963c-be309d9f9d1b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e3a58295-1d08-4620-8594-25d156d61c66">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>total_ventilator</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="af624234-71b6-4faa-9c51-5bf3ddf68548">
+          <ID>Current Hospitalized</ID>
+          <Name>Current Hospitalized</Name>
+          <Source dwd:design-time-name="72044bc4-e1f4-460a-97d2-4629f05a32c5">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="7d1624b2-5124-4704-8f75-74449d895c45">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>current_hospitalized</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="71641b3f-df41-4eea-a824-3d61b0ffc739">
+          <ID>Current Intensive Care</ID>
+          <Name>Current Intensive Care</Name>
+          <Source dwd:design-time-name="794d042a-3770-453e-b033-a40cd316405e">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c24dcbc8-a0fb-4823-90fe-d7f025c6cd11">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>current_intensive_care</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="a03ca7ca-afe4-451c-99d9-ac54db0e746b">
+          <ID>Current Ventilator</ID>
+          <Name>Current Ventilator</Name>
+          <Source dwd:design-time-name="25e57c8c-b424-4b9a-81da-47ac4acb16e1">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e1e9f87a-a1f8-4f19-b9f1-2fcba388751a">
+              <TableID>Fact_Epidemilogy</TableID>
+              <ColumnID>current_ventilator</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="134ffe1b-abe8-44cd-acba-1ed2ab15bc75">
+          <ID>Epidemilogy Count</ID>
+          <Name>Epidemilogy Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="642e5471-a7cf-4258-bdc2-89c3cfe6d0ab">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="96c9d37f-8a96-4f26-93ce-c2b478536309">
+              <TableID>Fact_Epidemilogy</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6cf0cece-cc33-419e-8a24-61d7e533e37e">
+          <CubeDimensionID>Health</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="320f8f36-f818-4900-85fd-aa05af586abb">
+              <AttributeID>SK Health</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fc3d3e27-71b8-49c8-992e-30e96798057e">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="18340ab9-dfef-4a91-839a-c19b8f8cd0a4">
+                    <TableID>Fact_Epidemilogy</TableID>
+                    <ColumnID>SK_Health</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e909c592-7159-4e1d-b8da-e7771577c1f5">
+          <CubeDimensionID>Demographics</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4a2e2930-8880-4f3d-9c72-b34f12bd76c6">
+              <AttributeID>SK Demographics</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6d0acea7-8240-4f4b-9b73-9bcf97d32a97">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7a477058-82c8-4624-a0ff-9b43a76b6849">
+                    <TableID>Fact_Epidemilogy</TableID>
+                    <ColumnID>SK_Demographics</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="23b0cddb-65df-43b1-954d-cacdb919747d">
+          <CubeDimensionID>Fecha</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c192f518-a504-4ee2-b3ba-6971de740cd7">
+              <AttributeID>Date Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f411aa47-9453-488d-ba63-2eb34525ee88">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1ea2622e-5811-45c5-ae03-0c476a9e7d9e">
+                    <TableID>Fact_Epidemilogy</TableID>
+                    <ColumnID>DateKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bf362240-74d0-4b6a-9add-779570ab8fb3">
+          <CubeDimensionID>Economy</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b2eaddf5-c37a-4a34-be0e-23365481cdd6">
+              <AttributeID>SK Economy</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="863f52e7-b22e-4415-84d6-3b303bd0e73f">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b8cb671b-9ba2-436e-9166-953d0d3ac880">
+                    <TableID>Fact_Epidemilogy</TableID>
+                    <ColumnID>SK_Economy</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8ef77c0a-ddc5-4d80-85f7-c8b9ba4cf02e">
+          <CubeDimensionID>Geography</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="29bb59fb-19cd-42ff-a979-9a3e409cb807">
+              <AttributeID>SK Geography</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d8174a52-c871-4d00-9484-4d4cebd92b69">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6edace26-725b-4bf6-94b2-59f243470539">
+                    <TableID>Fact_Epidemilogy</TableID>
+                    <ColumnID>SK_Geography</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="10ac199c-fbc8-4986-808f-741858ca3991">
+    <DataSourceViewID>COVID GRUPO1 DWH</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="a1d88c32-788a-4091-acd8-801623019e53">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T06:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T06:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE;            
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Casos]
+ AS SUM([Measures].[New Confirmed]), 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1;              
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Casos]
+ AS SUM([Measures].[New Confirmed])/[Measures].[Epidemilogy Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1;          
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Hospitalizaciones]
+ AS SUM([Measures].[New Hospitalized]), 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;          
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Hospitalizaciones]
+ AS SUM([Measures].[New Hospitalized])/[Measures].[Epidemilogy Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;          
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Recuperados]
+ AS SUM([Measures].[New Recovered]), 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;          
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Recuperados]
+ AS SUM([Measures].[New Recovered])/[Measures].[Epidemilogy Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;          
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Fallecidos]
+ AS SUM([Measures].[New Deceased]), 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;          
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Fallecidos]
+ AS SUM([Measures].[New Deceased])/[Measures].[Epidemilogy Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;          
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Pruebas Confirmadas]
+ AS SUM([Measures].[New Tested]), 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;          
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Pruebas Confirmadas]
+ AS SUM([Measures].[New Tested])/[Measures].[Epidemilogy Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;          
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Cuidados Intensivos]
+ AS SUM([Measures].[New Intensive Care]), 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;          
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Cuidados Intensivos]
+ AS SUM([Measures].[New Intensive Care])/[Measures].[Epidemilogy Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;          
+CREATE MEMBER CURRENTCUBE.[Measures].[Cantidad Total Casos Ventilacion]
+ AS SUM([Measures].[New Ventilator]), 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ;          
+CREATE MEMBER CURRENTCUBE.[Measures].[AVG Casos Ventilador]
+ AS SUM([Measures].[New Ventilator])/[Measures].[Epidemilogy Count], 
+FORMAT_STRING = "Standard", 
+VISIBLE = 1  ; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <Kpis>
+    <Kpi dwd:design-time-name="813667ce-7bcd-4657-9510-39fc975fad19">
+      <ID>KPI</ID>
+      <Name>KPI Infectados</Name>
+      <Value>[Measures].[AVG Casos]/100</Value>
+      <Status>CASE WHEN ISEMPTY ([Measures].[AVG Casos]) THEN NULL
+     WHEN (KPIVALUE("KPI Infectados")) &lt; 0.30 THEN ("Verde")
+     WHEN (KPIVALUE("KPI Infectados")) &gt; 0.30 AND KPIVALUE("KPI Infectados") &lt; 0.65 THEN("Amarillo")
+     WHEN (KPIVALUE("KPI Infectados")) &gt; 0.65 AND KPIVALUE("KPI Infectados") &lt; 0.80 THEN ("Naranja")
+    ELSE ("Rojo") END</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="9d0f276c-f023-4423-989b-8fd329cc32a5">
+      <ID>KPI 1</ID>
+      <Name>KPI Porcentaje Fallecida</Name>
+      <Value>[Measures].[AVG Fallecidos]/100</Value>
+      <Status>CASE WHEN ISEMPTY ([Measures].[AVG Fallecidos]) THEN NULL
+    ELSE KPIVALUE("KPI Porcentaje Fallecida") END</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="8ed4d518-b412-4233-b8f6-7a5abe2e7cdd">
+      <ID>KPI 2</ID>
+      <Name>KPI Recuperados</Name>
+      <Value>[Measures].[AVG Recuperados]/100</Value>
+      <Goal>0.80</Goal>
+      <Status>CASE WHEN ISEMPTY ([Measures].[AVG Recuperados]) THEN NULL
+     WHEN (KPIVALUE("KPI Recuperados") &gt;= KPIGOAL("KPI Recuperados")) THEN 1
+     WHEN (KPIVALUE("KPI Recuperados") &lt; KPIGOAL("KPI Recuperados")) THEN 0
+    ELSE -1 END</Status>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+  </Kpis>
+</Cube>
